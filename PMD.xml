@@ -2,22 +2,12 @@
 <pmd version="C++test" timestamp="2023-03-07T09:39:44+01:00">
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
     <violation beginline="93" endline="94" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
 </violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
     <violation beginline="94" endline="95" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-</violation>
-  </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="95" endline="96" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-</violation>
-  </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="103" endline="104" begincolumn="0" endcolumn="0" rule="BD-TRS-LOCK" priority="1" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-</violation>
-  </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="119" endline="120" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
 </violation>
   </file>
 </pmd>
