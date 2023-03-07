@@ -1,13 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="C++test" timestamp="2023-03-07T09:39:44+01:00">
+<pmd version="C++test" timestamp="2023-03-07T09:56:52+01:00">
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="93" endline="94" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
+    <violation beginline="93" endline="94" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:90***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();***Usage of "participants" in first critical section
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:94***position.translate(*velocityArray[i]);
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:95***ring.contains(...)
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:95***assertion(ring.contains(position), "Participant is out of ring");
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:98***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();***Usage of "participants" in second critical section
 </violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="94" endline="95" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
+    <violation beginline="94" endline="95" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:90***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:94***position.translate(*velocityArray[i]);***Usage of "velocityArray" in first critical section
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:95***ring.contains(...)
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:95***assertion(ring.contains(position), "Participant is out of ring");
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:98***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:94***position.translate(*velocityArray[i]);***Usage of "velocityArray" in second critical section
+</violation>
+  </file>
+  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
+    <violation beginline="95" endline="96" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:90***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:94***position.translate(*velocityArray[i]);
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:95***ring.contains(...)***Usage of "ring" in first critical section
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:95***assertion(ring.contains(position), "Participant is out of ring");
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:98***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:94***position.translate(*velocityArray[i]);
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:95***ring.contains(...)***Usage of "ring" in second critical section
+</violation>
+  </file>
+  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
+    <violation beginline="103" endline="104" begincolumn="0" endcolumn="0" rule="BD-TRS-LOCK" priority="1" package="Physics" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:90***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Point where the lock is acquired
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:94***position.translate(*velocityArray[i]);
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:95***ring.contains(...)
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:95***assertion(ring.contains(position), "Participant is out of ring");***assertion() throws const char *
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:103***}***Point prior to which the lock is to be released
+</violation>
+  </file>
+  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
+    <violation beginline="119" endline="120" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:117***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:118***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:119***ring.getPosition()***Usage of "ring" in first critical section
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:119***ring.getPosition().translate(*currentCameraVelocity);
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:120***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:122***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming false)***Not entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:128***SLEEP(STEP);
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:117***while (!exitGame) {***Loop condition evaluation: !exitGame (true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:118***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:119***ring.getPosition()***Usage of "ring" in second critical section
+</violation>
+  </file>
+  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
+    <violation beginline="124" endline="125" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:117***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:118***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:119***ring.getPosition()
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:119***ring.getPosition().translate(*currentCameraVelocity);***Usage of "currentCameraVelocity" in first critical section
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:120***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:122***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:123***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:124***participants[i]-&gt;getPosition()
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:124***participants[i]-&gt;getPosition().translate(*currentCameraVelocity);***Usage of "currentCameraVelocity" in second critical section
+</violation>
+  </file>
+  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
+    <violation beginline="124" endline="125" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:117***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:118***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:119***ring.getPosition()
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:119***ring.getPosition().translate(*currentCameraVelocity);
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:120***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:122***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:123***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:124***participants[i]-&gt;getPosition()***Usage of "participants" in first critical section
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:124***participants[i]-&gt;getPosition().translate(*currentCameraVelocity);
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:125***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:126***draw(participants[i]);
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:122***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (true)***Entering the loop
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:123***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
+/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp:124***participants[i]-&gt;getPosition()***Usage of "participants" in second critical section
+</violation>
+  </file>
+  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DivisionByZero.cpp">
+    <violation beginline="5" endline="6" begincolumn="0" endcolumn="0" rule="BD-PB-ZERO" priority="1" ruleset="Possible Bugs">/FlowAnalysisCpp/FlowAnalysisCpp/DivisionByZero.cpp:5***shape2-&gt;getArea()***Start of the path
+/FlowAnalysisCpp/FlowAnalysisCpp/DivisionByZero.cpp:5***return shape1-&gt;getArea()/shape2-&gt;getArea();***Point of division by zero
+</violation>
+  </file>
+  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp">
+    <violation beginline="8" endline="9" begincolumn="0" endcolumn="0" rule="BD-SECURITY-TDALLOC" priority="2" ruleset="Security">/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp:7***fscanf(file, "%d", pSize);***Tainting point
+/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp:8***int* data = new int[*pSize];***Point where the array is allocated
+</violation>
+  </file>
+  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp">
+    <violation beginline="9" endline="10" begincolumn="0" endcolumn="0" rule="BD-SECURITY-TDLOOP" priority="1" ruleset="Security">/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp:7***fscanf(file, "%d", pSize);***Tainting point***Tainted data: pSize[]
+/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp:8***int* data = new int[*pSize];
+/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp:9***for (int i = 0; i &lt; *pSize; i++) {***Tainted data: pSize[]***Tainted data use in a loop condition
+</violation>
+  </file>
+  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/NullPointer.cpp">
+    <violation beginline="11" endline="12" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">/FlowAnalysisCpp/FlowAnalysisCpp/NullPointer.cpp:7***Point* point = 0;***Source of null value***Null value carrier: point
+/FlowAnalysisCpp/FlowAnalysisCpp/NullPointer.cpp:8***if (argc &gt; 3) {***Condition evaluation: (argc &gt; 3) (assuming false)
+/FlowAnalysisCpp/FlowAnalysisCpp/NullPointer.cpp:11***point-&gt;reflectAcrossX();***Null value carrier: point***Null pointer dereferencing point
 </violation>
   </file>
 </pmd>
