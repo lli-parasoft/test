@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="C++test" timestamp="2023-03-06T11:02:56+01:00">
+<pmd version="C++test" timestamp="2023-03-07T04:32:20+01:00">
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="93" endline="94" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization"/>
+    <violation beginline="93" endline="94" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">while (!exitGame) {</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="94" endline="95" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization"/>
+    <violation beginline="94" endline="95" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">while (!exitGame) {</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="95" endline="96" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization"/>
+    <violation beginline="95" endline="96" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">while (!exitGame) {</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="103" endline="104" begincolumn="0" endcolumn="0" rule="BD-TRS-LOCK" priority="1" package="Physics" ruleset="Threads &amp; Synchronization"/>
+    <violation beginline="103" endline="104" begincolumn="0" endcolumn="0" rule="BD-TRS-LOCK" priority="1" package="Physics" ruleset="Threads &amp; Synchronization">while (!exitGame) {</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="119" endline="120" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization"/>
+    <violation beginline="119" endline="120" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">while (!exitGame) {</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="124" endline="125" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization"/>
+    <violation beginline="124" endline="125" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">while (!exitGame) {</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="124" endline="125" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization"/>
+    <violation beginline="124" endline="125" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">while (!exitGame) {</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DivisionByZero.cpp">
-    <violation beginline="5" endline="6" begincolumn="0" endcolumn="0" rule="BD-PB-ZERO" priority="1" ruleset="Possible Bugs"/>
+    <violation beginline="5" endline="6" begincolumn="0" endcolumn="0" rule="BD-PB-ZERO" priority="1" ruleset="Possible Bugs">shape2-&gt;getArea()</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp">
-    <violation beginline="8" endline="9" begincolumn="0" endcolumn="0" rule="BD-SECURITY-TDALLOC" priority="2" ruleset="Security"/>
+    <violation beginline="8" endline="9" begincolumn="0" endcolumn="0" rule="BD-SECURITY-TDALLOC" priority="2" ruleset="Security">fscanf(file, "%d", pSize);</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp">
-    <violation beginline="9" endline="10" begincolumn="0" endcolumn="0" rule="BD-SECURITY-TDLOOP" priority="1" ruleset="Security"/>
+    <violation beginline="9" endline="10" begincolumn="0" endcolumn="0" rule="BD-SECURITY-TDLOOP" priority="1" ruleset="Security">fscanf(file, "%d", pSize);</violation>
   </file>
   <file name="/FlowAnalysisCpp/FlowAnalysisCpp/NullPointer.cpp">
-    <violation beginline="11" endline="12" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs"/>
+    <violation beginline="11" endline="12" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">Point* point = 0;</violation>
   </file>
 </pmd>
