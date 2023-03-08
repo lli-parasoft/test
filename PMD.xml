@@ -1,331 +1,575 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="DTP Engine for Java" timestamp="2023-03-08T02:30:09+01:00">
-  <file name="/com.parasoft:demo/src/main/java/examples/metrics/MetricsExample.java">
-    <violation beginline="13" endline="14" begincolumn="0" endcolumn="0" rule="METRIC.NBD" priority="3" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0">
+  <file name="/pscom_nightly/src/unix/os/ProcessImpl.cc">
+    <violation beginline="40" endline="40" begincolumn="22" endcolumn="23" priority="1" rule="INIT-06" ruleset="Initialization">Constructor does not initialize members: '_status'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java">
-    <violation beginline="13" endline="13" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseGSS.java:10***byte[] inputBuff = new byte[256];
-AlwaysCloseGSS.java:11***GSSManager.getInstance().createContext(tokens).initSecContext(inputBuff, 0, 256);***Point where the resource is allocated***Allocated resource variable: GSSManager.getInstance().createContext(tokens)
-AlwaysCloseGSS.java:13***}***Allocated resource variable: GSSManager.getInstance().createContext(tokens)***Point where the allocated resource is lost
+  <file name="/edgtk_nightly/src/preprocessor/HashImport.cc">
+    <violation beginline="26" endline="26" begincolumn="38" endcolumn="39" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'getInstance' is passed by value</violation>
+  </file>
+  <file name="/edgtk_nightly/src/preprocessor/Header.cc">
+    <violation beginline="31" endline="31" begincolumn="26" endcolumn="27" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'getInstance' is passed by value</violation>
+  </file>
+  <file name="/edgtk_nightly/src/preprocessor/ImplicitNative.cc">
+    <violation beginline="31" endline="31" begincolumn="34" endcolumn="35" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'getInstance' is passed by value</violation>
+  </file>
+  <file name="/edgtk_nightly/src/preprocessor/Native.cc">
+    <violation beginline="31" endline="31" begincolumn="18" endcolumn="19" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'getInstance' is passed by value</violation>
+  </file>
+  <file name="/ppro_nightly/src/srlexer.cc">
+    <violation beginline="315" endline="315" begincolumn="16" endcolumn="17" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'do_preproc' is passed by value</violation>
+  </file>
+  <file name="/optdetector_nightly/utils/optdetector/optdetector.cc">
+    <violation beginline="63" endline="63" begincolumn="62" endcolumn="63" priority="3" rule="OPT-14" ruleset="Optimization">The parameter 'it' of function 'printOpts' is passed by value</violation>
+  </file>
+  <file name="/optdetector_nightly/utils/optdetector/optdetector.cc">
+    <violation beginline="63" endline="63" begincolumn="113" endcolumn="114" priority="3" rule="OPT-14" ruleset="Optimization">The parameter 'end' of function 'printOpts' is passed by value</violation>
+  </file>
+  <file name="/pscom_nightly/src/unix/os/RegistryKeyImpl.h">
+    <violation beginline="71" endline="71" begincolumn="67" endcolumn="68" priority="3" rule="OPT-14" ruleset="Optimization">The parameter 'value' of function 'setStringValue' is passed by value</violation>
+  </file>
+  <file name="/codewizard_nightly/include/profiling/RulePerformanceInfo.h">
+    <violation beginline="73" endline="73" begincolumn="12" endcolumn="13" priority="3" rule="CODSTA-82" ruleset="Coding Conventions">Loop does not contain terminate point</violation>
+  </file>
+  <file name="/testrunner_nightly/include/testrunner/TestRunnerData.h">
+    <violation beginline="45" endline="45" begincolumn="25" endcolumn="26" priority="3" rule="OPT-14" ruleset="Optimization">The parameter 'en' of function 'addEnum' is passed by value</violation>
+  </file>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/com/parasoft/scripting/DataInput.cc" suppressiontype="Initialization" msg="Constructor does not initialize members: '_fileBuffer'"/>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/NumberAssertClient.cc" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/NumberClient.cc" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+  <suppressedviolation filename="/pscom_nightly/include/pscom/memory/smp.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Smp' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/pscom_nightly/include/pscom/memory/smp.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Smp' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/pscom_nightly/include/pscom/io/Path.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Path' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/pscom_nightly/include/pscom/tja/values/Value.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Value' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/pscom_nightly/include/pscom/tja/values/Value.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Value' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/pscom_nightly/include/pscom/tja/values/Value.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Value' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/pscom_nightly/include/pscom/tja/values/Value.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Value' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/edgtk_nightly/include/edgtk/wrappers/Routine.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Routine' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+  <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+  <suppressedviolation filename="/edgtk_nightly/include/edgtk/wrappers/statements/Statement.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Statement' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/pscom_nightly/include/pscom/options/StreamSource.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'StreamSource' allowing conversion should be made explicit"/>
+  <suppressedviolation filename="/edgtk_nightly/include/edgtk/wrappers/SourceCorrespondence.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'SourceCorrespondence' allowing conversion should be made explicit"/>
+  <file name="/pscom_nightly/src/debug/Symbol.cc">
+    <violation beginline="67" endline="68" begincolumn="0" endcolumn="0" rule="BD-PB-STREAMFMT" priority="3" ruleset="Possible Bugs">Symbol.cc:42***std::ostream&amp; Symbol::print(std::ostream&amp; out) const***Start of the path
+Symbol.cc:44***operator&lt;&lt;(...)
+Symbol.cc:44***operator&lt;&lt;(...).operator&lt;&lt;(...)
+Symbol.cc:44***out &lt;&lt; "  0x" &lt;&lt; std::setw(2 * (unsigned)sizeof(_address)) &lt;&lt; std::setfill('0') &lt;&lt;
+Symbol.cc:45***std::noshowbase &lt;&lt; std::hex &lt;&lt; (unsigned long)_address &lt;&lt; " in" &lt;&lt; std::dec;
+Symbol.cc:44***out &lt;&lt; "  0x" &lt;&lt; std::setw(2 * (unsigned)sizeof(_address)) &lt;&lt; std::setfill('0') &lt;&lt;
+Symbol.cc:45***std::noshowbase &lt;&lt; std::hex &lt;&lt; (unsigned long)_address &lt;&lt; " in" &lt;&lt; std::dec;
+Symbol.cc:44***out &lt;&lt; "  0x" &lt;&lt; std::setw(2 * (unsigned)sizeof(_address)) &lt;&lt; std::setfill('0') &lt;&lt;
+Symbol.cc:47***if (_unmangledSymbolNameUsed) {***Condition evaluation: this-&gt;_unmangledSymbolNameUsed (assuming true)
+Symbol.cc:48***out &lt;&lt; " " &lt;&lt; _unmangledSymbolName;
+Symbol.cc:53***if (_offsetUsed &amp;&amp; !_fileNameLineUsed) {***Condition evaluation: this-&gt;_offsetUsed (assuming false)***Condition evaluation: _offsetUsed &amp;&amp; !_fileNameLineUsed (false)
+Symbol.cc:57***if (_fileNameLineUsed) {***Condition evaluation: this-&gt;_fileNameLineUsed (assuming false)
+Symbol.cc:61***if (_binaryNameUsed) {***Condition evaluation: this-&gt;_binaryNameUsed (assuming false)
+Symbol.cc:65***out &lt;&lt; ' ';
+Symbol.cc:66***return out;
+Symbol.cc:67***}***End of the path
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java">
-    <violation beginline="29" endline="29" begincolumn="16" endcolumn="34" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseGSS.java:19***GSSContext context = null;***Source of null value***Null value carrier: context
-AlwaysCloseGSS.java:21***context = GSSManager.getInstance().createContext(tokens)***GSSManager.createContext() throws GSSException
-AlwaysCloseGSS.java:25***catch (Exception ioe)
-AlwaysCloseGSS.java:26***System.out.println("Exception occured: " + ioe);
-AlwaysCloseGSS.java:29***context.dispose();***Null value carrier: context***NullPointerException point
+  <file name="/pscom_nightly/src/unix/debug/StackTrace.cc">
+    <violation beginline="318" endline="319" begincolumn="0" endcolumn="0" rule="BD-PB-DEREF" priority="2" package="PsCom::Debug::&lt;unnamed&gt;" ruleset="Possible Bugs">StackTrace.cc:308***prog = Tja::Compiler::parse(in, 0, dirList);
+StackTrace.cc:318***if (prog == 0) {***Important values: prog != null***Point of checking for nullity
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java">
-    <violation beginline="16" endline="16" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseImages.java:12***Image image = null;
-AlwaysCloseImages.java:14***ImageReader imgReader = spi.createReaderInstance();***Point where the resource is allocated***Allocated resource variable: imgReader
-AlwaysCloseImages.java:15***image = imgReader.read(0)***ImageReader.read() throws IOException
-AlwaysCloseImages.java:16***}***Allocated resource variable: imgReader***Point where the allocated resource is lost
+  <file name="/pscom_nightly/src/unix/debug/StackTrace.cc">
+    <violation beginline="418" endline="419" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">StackTrace.cc:396***initialize()
+StackTrace.cc:396***if (!initialize()) {***Condition evaluation: !initialize() (assuming false)
+StackTrace.cc:401***bool showStackTrace = PsComDebugOptions::getShowStackTrace();
+StackTrace.cc:402***PsComDebugOptions::setShowStackTrace(false);
+StackTrace.cc:404***Dl_info info;
+StackTrace.cc:405***if (dladdr(_address, &amp;info)) {***Condition evaluation: (bool)dladdr(...) (assuming true)
+StackTrace.cc:406***if (info.dli_sname) {***Condition evaluation: (bool)info.dli_sname (assuming false)
+StackTrace.cc:411***if (info.dli_fname) {***Source of null value***Null value carrier: info.dli_fname***Condition evaluation: (bool)info.dli_fname (assuming false)
+StackTrace.cc:415***std::ostringstream out;
+StackTrace.cc:416***bool hasBinary = true;
+StackTrace.cc:417***if (!info.dli_sname) {***Condition evaluation: !info.dli_sname (true)
+StackTrace.cc:418***std::string bin(info.dli_fname);***Null value carrier: info.dli_fname***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java">
-    <violation beginline="31" endline="31" begincolumn="12" endcolumn="32" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseImages.java:23***Image image = null;
-AlwaysCloseImages.java:24***ImageReader imgReader = null;***Source of null value***Null value carrier: imgReader
-AlwaysCloseImages.java:26***imgReader = spi.createReaderInstance()***ImageReaderSpi.createReaderInstance() throws IOException
-AlwaysCloseImages.java:28***catch (Exception e)
-AlwaysCloseImages.java:29***System.out.println("Exception occured: " + e);
-AlwaysCloseImages.java:31***imgReader.dispose();***Null value carrier: imgReader***NullPointerException point
+  <file name="/pscom_nightly/src/unix/io/PathImpl.cc">
+    <violation beginline="52" endline="53" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">PathImpl.cc:51***char * path = ::getenv("PATH");***Source of null value***Null value carrier: path
+PathImpl.cc:52***basic_string(...)***Null value carrier: path***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseLogging.java">
-    <violation beginline="13" endline="13" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseLogging.java:10***ConsoleHandler handler = new ConsoleHandler();***Point where the resource is allocated***Allocated resource variable: new ConsoleHandler()
-AlwaysCloseLogging.java:11***LogRecord record = new LogRecord(level, message);***Allocated resource variable: handler
-AlwaysCloseLogging.java:12***handler.publish(record);
-AlwaysCloseLogging.java:13***}***Allocated resource variable: handler***Point where the allocated resource is lost
+  <file name="/edgtk_nightly/src/Tokens.cc">
+    <violation beginline="60" endline="61" begincolumn="0" endcolumn="0" rule="BD-PB-CC" priority="2" ruleset="Possible Bugs">Tokens.cc:30***bool operator()(const EdgTk::Token::TokenText&amp; tt1, const EdgTk::Token::TokenText&amp; tt2)***Start of the path
+Tokens.cc:32***if (tt1.place &lt; EdgTk::Token::Suf_First &amp;&amp; tt2.place &gt;= EdgTk::Token::Suf_First) {***Condition evaluation: (tt1-&gt;place &lt; 3) (assuming false)***Condition evaluation: tt1.place &lt; EdgTk::Token::Suf_First &amp;&amp; tt2.place &gt;= EdgTk::Token::Suf_First (false)
+Tokens.cc:36***if (tt2.place &lt; EdgTk::Token::Suf_First &amp;&amp; tt1.place &gt;= EdgTk::Token::Suf_First) {***Condition evaluation: (tt2-&gt;place &lt; 3) (assuming false)***Condition evaluation: tt2.place &lt; EdgTk::Token::Suf_First &amp;&amp; tt1.place &gt;= EdgTk::Token::Suf_First (false)
+Tokens.cc:45***if (tt1.pair == 0 &amp;&amp; tt2.pair != 0) {***Condition evaluation: (tt1-&gt;pair == 0) (assuming true)***Condition evaluation: (tt2-&gt;pair != 0) (assuming false)***Condition evaluation: tt1.pair == 0 &amp;&amp; tt2.pair != 0 (false)
+Tokens.cc:51***if (tt2.pair == 0 &amp;&amp; tt1.pair != 0) {***Condition evaluation: (tt2-&gt;pair == 0) (true)***Condition evaluation: (tt1-&gt;pair != 0) (false)***Condition evaluation: tt2.pair == 0 &amp;&amp; tt1.pair != 0 (false)
+Tokens.cc:60***if ((tt1.pair == 0 &amp;&amp; tt2.pair == 0) ||***Condition evaluation: (tt1-&gt;pair == 0) (true)***Point where senseless condition is used
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
-    <violation beginline="18" endline="18" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseNIOChannels.java:13***FileInputStream fInput = new FileInputStream(filename);
-AlwaysCloseNIOChannels.java:14***FileChannel channel = fInput.getChannel();***Point where the resource is allocated***Allocated resource variable: &lt;FileInputStream referenced by channel&gt;.getChannel(), fInput.getChannel(), channel
-AlwaysCloseNIOChannels.java:15***ByteBuffer dst = ByteBuffer.allocate(512);
-AlwaysCloseNIOChannels.java:16***int read = channel.read(dst);***FileChannel.read() throws IOException
-AlwaysCloseNIOChannels.java:18***}***Allocated resource variable: &lt;FileInputStream referenced by channel&gt;.getChannel(), fInput.getChannel(), channel***Point where the allocated resource is lost
+  <file name="/runtime_nightly/src/common/CppTestString.c">
+    <violation beginline="425" endline="426" begincolumn="0" endcolumn="0" rule="BD-PB-CC" priority="2" ruleset="Possible Bugs">CppTestString.c:422***char* CDECL_CALL cpptestAllocateString(size_t size, unsigned char content)***Start of the path
+CppTestString.c:424***localInternalMalloc(...)
+CppTestString.c:424***char* result = (char*)localInternalMalloc(size);
+CppTestString.c:425***if (result &amp;&amp; (size &gt; 0U)) {***Point where senseless condition is used
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
-    <violation beginline="35" endline="35" begincolumn="16" endcolumn="32" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseNIOChannels.java:24***FileChannel channel = null;***Source of null value***Null value carrier: channel
-AlwaysCloseNIOChannels.java:26***new FileInputStream(filename)***FileInputStream.FileInputStream() throws FileNotFoundException
-AlwaysCloseNIOChannels.java:31***catch (Exception ioe)
-AlwaysCloseNIOChannels.java:32***System.out.println("Exception occured: " + ioe);
-AlwaysCloseNIOChannels.java:35***channel.close();***Null value carrier: channel***NullPointerException point
+  <file name="/cpptestdebug_nightly/src/Gcc.c">
+    <violation beginline="63" endline="64" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">Gcc.c:59***int ret = 0;
+Gcc.c:60***if (index(file, '/') == 0) {***Condition evaluation: (index(...) == 0) (assuming true)
+Gcc.c:62***getenv(...)***Source of null value***Null value carrier: getenv("PATH") ? getenv("PATH") : ":/bin:/usr/bin"
+Gcc.c:62***const char* path = getenv("PATH") ? getenv("PATH") : ":/bin:/usr/bin";
+Gcc.c:63***char* copy = strdup(path);***Null value carrier: path***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
-    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseRAFs.java:8***String res = null;
-AlwaysCloseRAFs.java:10***RandomAccessFile raf = new RandomAccessFile(sFileName, sMode);***Point where the resource is allocated***Allocated resource variable: new RandomAccessFile(sFileName, sMode)
-AlwaysCloseRAFs.java:11***byte[] bytes = new byte[512];***Allocated resource variable: raf
-AlwaysCloseRAFs.java:12***int read = raf.read(bytes, offset, bytes.length);***RandomAccessFile.read() throws IOException
-AlwaysCloseRAFs.java:14***}***Allocated resource variable: raf***Point where the allocated resource is lost
+  <file name="/cpptestdebug_nightly/src/Gcc.c">
+    <violation beginline="86" endline="87" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">Gcc.c:59***int ret = 0;
+Gcc.c:60***if (index(file, '/') == 0) {***Condition evaluation: (index(...) == 0) (assuming true)
+Gcc.c:62***const char* path = getenv("PATH") ? getenv("PATH") : ":/bin:/usr/bin";***Condition evaluation: (getenv(...) != 0) (assuming false)
+Gcc.c:63***char* copy = strdup(path);
+Gcc.c:64***char* copycopy = copy;
+Gcc.c:65***char* savePtr = NULL;
+Gcc.c:66***char* newFile = NULL;
+Gcc.c:68***size_t tokenSize = 0;
+Gcc.c:69***size_t fileSize = strlen(file);
+Gcc.c:70***size_t size;
+Gcc.c:71***struct stat fileStat;
+Gcc.c:73***strcpy(copy, path);
+Gcc.c:76***char* token = strtok_r(copycopy, ":", &amp;savePtr);
+Gcc.c:77***copycopy = NULL;
+Gcc.c:79***if (token == 0) {***Condition evaluation: (token == 0) (assuming false)
+Gcc.c:83***tokenSize = strlen(token);
+Gcc.c:84***size = tokenSize + 1 /* / */ + fileSize + 1 /* NULL */;
+Gcc.c:85***malloc(...)***Source of null value***Null value carrier: malloc(...)
+Gcc.c:85***newFile = (char*)malloc(size);
+Gcc.c:86***strcpy(newFile, token);***Null value carrier: newFile***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
-    <violation beginline="32" endline="32" begincolumn="16" endcolumn="28" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseRAFs.java:21***String res = null;
-AlwaysCloseRAFs.java:22***RandomAccessFile raf = null;***Source of null value***Null value carrier: raf
-AlwaysCloseRAFs.java:24***new RandomAccessFile(sFileName, sMode)***RandomAccessFile.RandomAccessFile() throws FileNotFoundException
-AlwaysCloseRAFs.java:28***catch (Exception e)
-AlwaysCloseRAFs.java:29***System.out.println();
-AlwaysCloseRAFs.java:32***raf.close();***Null value carrier: raf***NullPointerException point
+  <file name="/cpptesttrace_nightly/src/unix/CppTestTrace.c">
+    <violation beginline="152" endline="153" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">CppTestTrace.c:150***size_t len = strlen(str);
+CppTestTrace.c:151***char* ret = allocMem(pool, len + 1);***Null value carrier: allocMem(...)
+CppTestTrace.c:152***strcpy(ret, str);***Null value carrier: ret***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
-    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseSockets.java:12***Socket sock = srvSocket.accept();***Point where the resource is allocated***Allocated resource variable: sock
-AlwaysCloseSockets.java:14***}***Allocated resource variable: sock***Point where the allocated resource is lost
+  <file name="/cpptesttrace_nightly/src/Util.c">
+    <violation beginline="78" endline="79" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">Util.c:52***const char* ret = file;
+Util.c:53***if (index(file, '/') == 0***Condition evaluation: (index(...) == 0) (assuming true)
+Util.c:60***getenv(...)***Source of null value***Null value carrier: getenv("PATH") ? getenv("PATH") : ":/bin:/usr/bin"
+Util.c:60***const char* path = getenv("PATH") ? getenv("PATH") : ":/bin:/usr/bin";
+Util.c:61***char* copy = STRDUP(pool, path); /* parasoft-suppress BD-PB-NP "accepted" */***Null value carrier: path
+Util.c:62***char* copycopy = copy;
+Util.c:64***char* savePtr = NULL;
+Util.c:65***const char sep[] = ":";
+Util.c:66***const char dirSep = '/';
+Util.c:71***char* newFile = 0;
+Util.c:73***size_t tokenSize = 0;
+Util.c:74***size_t fileSize = strlen(file);
+Util.c:75***size_t size = 0;
+Util.c:76***struct stat fileStat;
+Util.c:78***strcpy(copy, path);***Null value carrier: path***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
-    <violation beginline="28" endline="28" begincolumn="16" endcolumn="29" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseSockets.java:20***Socket sock = null;***Source of null value***Null value carrier: sock
-AlwaysCloseSockets.java:22***sock = srvSocket.accept()***ServerSocket.accept() throws IOException
-AlwaysCloseSockets.java:24***catch (IOException ioe)
-AlwaysCloseSockets.java:25***System.out.println("Exception occured: " + ioe);
-AlwaysCloseSockets.java:28***sock.close();***Null value carrier: sock***NullPointerException point
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="174" endline="175" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">driver.cc:165***char *tmp, *single, *file, *work;
+driver.cc:166***struct stat buf;
+driver.cc:167***int status, len;
+driver.cc:169***if (!path) {***Condition evaluation: !path (assuming false)
+driver.cc:173***malloc(...)***Source of null value***Null value carrier: malloc(...)
+driver.cc:173***file = (char *) malloc (strlen (name) + 2);
+driver.cc:174***sprintf (file, "/%s", name);***Null value carrier: file***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java">
-    <violation beginline="52" endline="52" begincolumn="12" endcolumn="28" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseXMLEncDec.java:43***XMLEncoder encoder = null;***Source of null value***Null value carrier: encoder
-AlwaysCloseXMLEncDec.java:45***new XMLEncoder(out)***XMLEncoder.XMLEncoder() throws IllegalArgumentException
-AlwaysCloseXMLEncDec.java:49***catch (Exception e)
-AlwaysCloseXMLEncDec.java:50***System.out.println("Exception occured: " + e);
-AlwaysCloseXMLEncDec.java:52***encoder.close();***Null value carrier: encoder***NullPointerException point
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="186" endline="187" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">driver.cc:165***char *tmp, *single, *file, *work;
+driver.cc:166***struct stat buf;
+driver.cc:167***int status, len;
+driver.cc:169***if (!path) {***Condition evaluation: !path (assuming false)
+driver.cc:173***file = (char *) malloc (strlen (name) + 2);
+driver.cc:174***sprintf (file, "/%s", name);
+driver.cc:176***len = strlen (path) + 1;
+driver.cc:177***tmp = (char*) malloc (len);
+driver.cc:178***malloc(...)***Source of null value***Null value carrier: malloc(...)
+driver.cc:178***work = (char*) malloc (len + 512);
+driver.cc:180***memcpy (tmp, path, len);***Null value carrier: work
+driver.cc:182***single = strtok (tmp, PATH_SEPS_UNIX);
+driver.cc:183***if (!single) // i.e. empty path ""***Condition evaluation: !single (assuming false)
+driver.cc:186***strcpy (work, single);***Null value carrier: work***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java">
-    <violation beginline="71" endline="71" begincolumn="12" endcolumn="28" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseXMLEncDec.java:57***Vector vObjs = new Vector();
-AlwaysCloseXMLEncDec.java:58***XMLDecoder decoder = null;***Source of null value***Null value carrier: decoder
-AlwaysCloseXMLEncDec.java:60***new XMLDecoder(in)***XMLDecoder.XMLDecoder() throws IllegalArgumentException
-AlwaysCloseXMLEncDec.java:68***catch (Exception e)
-AlwaysCloseXMLEncDec.java:69***System.out.println("Exception occured: " + e);
-AlwaysCloseXMLEncDec.java:71***decoder.close();***Null value carrier: decoder***NullPointerException point
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="187" endline="188" begincolumn="0" endcolumn="0" rule="BD-PB-DEREF" priority="2" ruleset="Possible Bugs">driver.cc:186***strcpy (work, single);***Point of dereferencing***Important values: single
+driver.cc:187***while (single) {***Important values: single != null***Point of checking for nullity
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
-    <violation beginline="17" endline="17" begincolumn="15" endcolumn="38" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">DivisionByZero.java:14***calculateDiscountedSum(int code, float initialSum, Consumer person)***Start of the path
-DivisionByZero.java:15***float discountedSum = calculateCommonDiscountedSum(initialSum);
-DivisionByZero.java:16***if (code == PERSONAL_DISCOUNT) {***Condition evaluation: (code == 0) (assuming false)
-DivisionByZero.java:17***if (code == DISCOUNT) {***Point where senseless condition is used
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="207" endline="208" begincolumn="0" endcolumn="0" rule="BD-RES-LEAKS" priority="1" ruleset="Resources">driver.cc:165***char *tmp, *single, *file, *work;
+driver.cc:166***struct stat buf;
+driver.cc:167***int status, len;
+driver.cc:169***if (!path) {***Condition evaluation: !path (assuming false)
+driver.cc:173***file = (char *) malloc (strlen (name) + 2);
+driver.cc:174***sprintf (file, "/%s", name);
+driver.cc:176***len = strlen (path) + 1;
+driver.cc:177***tmp = (char*) malloc (len);
+driver.cc:178***malloc(...)***Point where memory is allocated***Allocated memory: malloc(...)
+driver.cc:178***work = (char*) malloc (len + 512);
+driver.cc:180***memcpy (tmp, path, len);***Allocated memory: work
+driver.cc:182***single = strtok (tmp, PATH_SEPS_UNIX);
+driver.cc:183***if (!single) // i.e. empty path ""***Condition evaluation: !single (assuming true)
+driver.cc:184***return (char*) 0;
+driver.cc:207***}***Allocated memory: work***Point where allocated memory is lost
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
-    <violation beginline="18" endline="18" begincolumn="15" endcolumn="43" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">DivisionByZero.java:14***calculateDiscountedSum(int code, float initialSum, Consumer person)***Start of the path
-DivisionByZero.java:15***float discountedSum = calculateCommonDiscountedSum(initialSum);
-DivisionByZero.java:16***if (code == PERSONAL_DISCOUNT) {***Condition evaluation: (code == 0) (assuming false)
-DivisionByZero.java:17***if (code == DISCOUNT) {***Condition evaluation: (code == 0) (false)
-DivisionByZero.java:18***if (code == SPECIAL_OFFER) {***Point where senseless condition is used
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="207" endline="208" begincolumn="0" endcolumn="0" rule="BD-RES-LEAKS" priority="1" ruleset="Resources">driver.cc:165***char *tmp, *single, *file, *work;
+driver.cc:166***struct stat buf;
+driver.cc:167***int status, len;
+driver.cc:169***if (!path) {***Condition evaluation: !path (assuming false)
+driver.cc:173***file = (char *) malloc (strlen (name) + 2);
+driver.cc:174***sprintf (file, "/%s", name);
+driver.cc:176***len = strlen (path) + 1;
+driver.cc:177***malloc(...)***Point where memory is allocated***Allocated memory: malloc(...)
+driver.cc:177***tmp = (char*) malloc (len);
+driver.cc:178***work = (char*) malloc (len + 512);***Allocated memory: tmp
+driver.cc:180***memcpy (tmp, path, len);
+driver.cc:182***single = strtok (tmp, PATH_SEPS_UNIX);***Allocated memory: tmp, memcpy(...)
+driver.cc:183***if (!single) // i.e. empty path ""***Condition evaluation: !single (assuming true)
+driver.cc:184***return (char*) 0;
+driver.cc:207***}***Allocated memory: tmp, memcpy(...)***Point where allocated memory is lost
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
-    <violation beginline="22" endline="22" begincolumn="12" endcolumn="75" rule="BD.PB.ZERO" priority="1" package="examples.flowanalysis" ruleset="Possible Bugs">DivisionByZero.java:15***float discountedSum = calculateCommonDiscountedSum(initialSum);***Start of the path
-DivisionByZero.java:16***if (code == PERSONAL_DISCOUNT) {***Condition evaluation: (code == 0) (assuming true)
-DivisionByZero.java:21***if (code == PERSONAL_DISCOUNT) {***Condition evaluation: (code == 0) (true)
-DivisionByZero.java:22***float progressionCoef = person.getOverallSum() / discountedSum;***Point of division by zero
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="207" endline="208" begincolumn="0" endcolumn="0" rule="BD-RES-LEAKS" priority="1" ruleset="Resources">driver.cc:165***char *tmp, *single, *file, *work;
+driver.cc:166***struct stat buf;
+driver.cc:167***int status, len;
+driver.cc:169***if (!path) {***Condition evaluation: !path (assuming false)
+driver.cc:173***malloc(...)***Point where memory is allocated***Allocated memory: malloc(...)
+driver.cc:173***file = (char *) malloc (strlen (name) + 2);
+driver.cc:174***sprintf (file, "/%s", name);***Allocated memory: file
+driver.cc:176***len = strlen (path) + 1;
+driver.cc:177***tmp = (char*) malloc (len);
+driver.cc:178***work = (char*) malloc (len + 512);
+driver.cc:180***memcpy (tmp, path, len);
+driver.cc:182***single = strtok (tmp, PATH_SEPS_UNIX);
+driver.cc:183***if (!single) // i.e. empty path ""***Condition evaluation: !single (assuming true)
+driver.cc:184***return (char*) 0;
+driver.cc:207***}***Allocated memory: file***Point where allocated memory is lost
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/FilesInjection.java">
-    <violation beginline="27" endline="27" begincolumn="12" endcolumn="25" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">FilesInjection.java:21***FileOutputStream fOut = null;***Source of null value***Null value carrier: fOut
-FilesInjection.java:23***String sFileName = storyName;
-FilesInjection.java:24***new FileOutputStream(sFileName)***FileOutputStream.FileOutputStream() throws FileNotFoundException
-FilesInjection.java:27***fOut.close();***Null value carrier: fOut***NullPointerException point
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="274" endline="275" begincolumn="0" endcolumn="0" rule="BD-PB-CC" priority="2" ruleset="Possible Bugs">driver.cc:263***_u_quoteIfNeeded (char* str)***Start of the path
+driver.cc:265***bool needs = false;
+driver.cc:274***if (!needs) {***Point where senseless condition is used
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/IncorrectIteratorUsage.java">
-    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" rule="BD.CO.ITMOD" priority="1" package="examples.flowanalysis" ruleset="Collections">IncorrectIteratorUsage.java:15***Iterator&lt;?&gt; iter = collection.iterator();***Iterator creation point***Tracked iterators: iter***Tracked collections: collection
-IncorrectIteratorUsage.java:16***while (iter.hasNext()) {***Loop condition evaluation: iter.hasNext() (assuming true)***Entering the loop
-IncorrectIteratorUsage.java:17***Object obj = iter.next();
-IncorrectIteratorUsage.java:18***if (tp.isAssignableFrom(obj.getClass())) {***Condition evaluation: tp.isAssignableFrom(obj.getClass()) (assuming false)
-IncorrectIteratorUsage.java:21***collection.remove(obj);***Collection modification point
-IncorrectIteratorUsage.java:16***iter.hasNext()***Tracked iterators: iter***Tracked collections: collection***Iterator usage point
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="319" endline="320" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">driver.cc:314***char* last_dot = strrchr (scriptFile, '.');
+driver.cc:315***const char* helpFile = 0;
+driver.cc:316***if (last_dot) {***Condition evaluation: (bool)last_dot (assuming true)
+driver.cc:317***size_t scriptFileLen = strlen(scriptFile);
+driver.cc:318***malloc(...)***Source of null value***Null value carrier: malloc(...)
+driver.cc:318***helpFile = (char*) malloc ((scriptFileLen + 3) * sizeof (char));
+driver.cc:319***sprintf((char*)helpFile, "%s", scriptFile);***Null value carrier: helpFile***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientCollectionRemoval.java">
-    <violation beginline="15" endline="15" begincolumn="15" endcolumn="29" rule="BD.CO.ITMOD" priority="1" package="examples.flowanalysis" ruleset="Collections">InefficientCollectionRemoval.java:14***Iterator&lt;?&gt; iter = collection.iterator();***Iterator creation point***Tracked iterators: iter***Tracked collections: collection
-InefficientCollectionRemoval.java:15***while (iter.hasNext()) {***Loop condition evaluation: iter.hasNext() (assuming true)***Entering the loop
-InefficientCollectionRemoval.java:16***Object element = iter.next();
-InefficientCollectionRemoval.java:17***collection.remove(element);***Collection modification point
-InefficientCollectionRemoval.java:15***iter.hasNext()***Tracked iterators: iter***Tracked collections: collection***Iterator usage point
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="466" endline="467" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">driver.cc:456***const char* home = 0;
+driver.cc:458***char* last_sep = strrchr (binary, FILE_SEP);
+driver.cc:459***if (last_sep) {***Condition evaluation: (bool)last_sep (assuming true)
+driver.cc:463***malloc(...)***Source of null value***Null value carrier: malloc(...)
+driver.cc:463***home = (char*) malloc ((PATH_MAX + 1) * sizeof (char));
+driver.cc:464***realpath (binary, (char*)home);***Null value carrier: home
+driver.cc:466***last_sep = strrchr ((char*)home, FILE_SEP);***Null value carrier: home***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
-    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" rule="BD.CO.ITMOD" priority="1" package="examples.flowanalysis" ruleset="Collections">InefficientMapRemoval.java:15***Iterator&lt;?&gt; iter = map.keySet().iterator();***Iterator creation point***Tracked iterators: iter***Tracked collections: map
-InefficientMapRemoval.java:16***while (iter.hasNext()) {***Loop condition evaluation: iter.hasNext() (assuming true)***Entering the loop
-InefficientMapRemoval.java:17***Object key = iter.next();
-InefficientMapRemoval.java:18***map.remove(key);***Collection modification point
-InefficientMapRemoval.java:16***iter.hasNext()***Tracked iterators: iter***Tracked collections: map***Iterator usage point
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="492" endline="493" begincolumn="0" endcolumn="0" rule="BD-PB-DEREF" priority="2" ruleset="Possible Bugs">driver.cc:458***char* last_sep = strrchr (binary, FILE_SEP);***Point of dereferencing***Important values: binary
+driver.cc:459***if (last_sep) {***Important values: binary != null***Condition evaluation: (bool)last_sep (assuming false)
+driver.cc:492***if (binary != NULL) {***Important values: binary != null***Point of checking for nullity
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
-    <violation beginline="29" endline="29" begincolumn="15" endcolumn="29" rule="BD.CO.ITMOD" priority="1" package="examples.flowanalysis" ruleset="Collections">InefficientMapRemoval.java:28***Iterator&lt;?&gt; iter = map.entrySet().iterator();***Iterator creation point***Tracked iterators: iter***Tracked collections: map
-InefficientMapRemoval.java:29***while (iter.hasNext()) {***Loop condition evaluation: iter.hasNext() (assuming true)***Entering the loop
-InefficientMapRemoval.java:30***Entry&lt;?, ?&gt; entry = (Entry&lt;?, ?&gt;) iter.next();
-InefficientMapRemoval.java:31***Object key = entry.getKey();
-InefficientMapRemoval.java:32***map.remove(key);***Collection modification point
-InefficientMapRemoval.java:29***iter.hasNext()***Tracked iterators: iter***Tracked collections: map***Iterator usage point
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="492" endline="493" begincolumn="0" endcolumn="0" rule="BD-PB-CC" priority="2" ruleset="Possible Bugs">driver.cc:454***static const char* _u_findCurrentExecHome (char* binary)***Start of the path
+driver.cc:456***const char* home = 0;
+driver.cc:458***char* last_sep = strrchr (binary, FILE_SEP);
+driver.cc:459***if (last_sep) {***Condition evaluation: (bool)last_sep (assuming false)
+driver.cc:492***if (binary != NULL) {***Point where senseless condition is used
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
-    <violation beginline="11" endline="11" begincolumn="15" endcolumn="56" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">UnreachableCode.java:8***printCalculationResult(Object result)***Start of the path
-UnreachableCode.java:9***if (result instanceof Exception) {***Condition evaluation: result instanceof java.lang.Exception (assuming false)
-UnreachableCode.java:11***if (result instanceof RuntimeException) {***Point where senseless condition is used
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="567" endline="568" begincolumn="0" endcolumn="0" rule="BD-RES-LEAKS" priority="1" ruleset="Resources">driver.cc:552***malloc(...)***Point where memory is allocated***Allocated memory: malloc(...)
+driver.cc:552***char* tmp = (char*) malloc ((PATH_MAX + 1) * sizeof (char));
+driver.cc:556***char* ret = realpath (path, tmp);***Allocated memory: tmp
+driver.cc:558***if (ret != 0) {***Condition evaluation: (ret != 0) (assuming true)
+driver.cc:559***char* newline = strchr (ret, ' ');
+driver.cc:560***if (newline) {***Condition evaluation: (bool)newline (assuming false)
+driver.cc:563***return ret;
+driver.cc:567***}***Allocated memory: tmp***Point where allocated memory is lost
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
-    <violation beginline="23" endline="23" begincolumn="19" endcolumn="39" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">UnreachableCode.java:19***guessFigure(boolean round, boolean volumetric)***Start of the path
-UnreachableCode.java:20***final int figure;
-UnreachableCode.java:21***if (round &amp;&amp; volumetric) {***Condition evaluation: round (assuming true)***Condition evaluation: volumetric (assuming false)***Condition evaluation: round &amp;&amp; volumetric (false)
-UnreachableCode.java:23***round &amp;&amp; !volumetric***Condition evaluation: round (true)***Point where senseless condition is used
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="659" endline="660" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">driver.cc:653***char* javaExec = 0;
+driver.cc:655***if (javaHomeArg) {***Condition evaluation: (bool)javaHomeArg (assuming true)
+driver.cc:656***printf ("%s: Using non default java: %s ", COMMANDNAME, javaHomeArg);
+driver.cc:658***malloc(...)***Source of null value***Null value carrier: malloc(...)
+driver.cc:658***javaExec = (char*) malloc (strlen (javaHomeArg) + 20);
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
-    <violation beginline="25" endline="25" begincolumn="19" endcolumn="25" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">UnreachableCode.java:19***guessFigure(boolean round, boolean volumetric)***Start of the path
-UnreachableCode.java:20***final int figure;
-UnreachableCode.java:21***if (round &amp;&amp; volumetric) {***Condition evaluation: round (assuming false)***Condition evaluation: round &amp;&amp; volumetric (false)
-UnreachableCode.java:23***if (round &amp;&amp; !volumetric) {***Condition evaluation: round (false)***Condition evaluation: round &amp;&amp; !volumetric (false)
-UnreachableCode.java:25***!round***Point where senseless condition is used
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="660" endline="661" begincolumn="0" endcolumn="0" rule="BD-RES-LEAKS" priority="1" ruleset="Resources">driver.cc:653***char* javaExec = 0;
+driver.cc:655***if (javaHomeArg) {***Condition evaluation: (bool)javaHomeArg (assuming true)
+driver.cc:656***printf ("%s: Using non default java: %s ", COMMANDNAME, javaHomeArg);
+driver.cc:658***malloc(...)***Point where memory is allocated***Allocated memory: malloc(...)
+driver.cc:658***javaExec = (char*) malloc (strlen (javaHomeArg) + 20);
+driver.cc:660***javaExec = _u_realpath (javaExec);***Allocated memory: javaExec***Point where allocated memory is lost
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java">
-    <violation beginline="40" endline="40" begincolumn="12" endcolumn="60" rule="BD.PB.NOTINITCTOR" priority="1" package="examples.flowanalysis" ruleset="Possible Bugs">UseBeforeInConstructorInitialization.java:28***int minLoginLength = 7;***Not explicitly initialized value: this.minLoginLength***Point of implicit initialization
-UseBeforeInConstructorInitialization.java:31***super(name, password);
-UseBeforeInConstructorInitialization.java:28***int minLoginLength = 7;***Point of explicit initialization
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="663" endline="664" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">driver.cc:653***char* javaExec = 0;
+driver.cc:655***if (javaHomeArg) {***Condition evaluation: (bool)javaHomeArg (assuming false)
+driver.cc:662***malloc(...)***Source of null value***Null value carrier: malloc(...)
+driver.cc:662***char* dir = (char*) malloc (1024);
+driver.cc:664***parasoftTestLocation, FILE_SEP, FILE_SEP, ARCH, PLATFORM);
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java">
-    <violation beginline="40" endline="40" begincolumn="16" endcolumn="57" rule="BD.PB.NOTEXPLINIT" priority="1" package="examples.flowanalysis" ruleset="Possible Bugs">UseBeforeInConstructorInitialization.java:28***int minLoginLength = 7;***Source of implicitly initialized value***Not explicitly initialized value: this.minLoginLength
-UseBeforeInConstructorInitialization.java:31***super(name, password);
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="668" endline="669" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">driver.cc:653***char* javaExec = 0;
+driver.cc:655***if (javaHomeArg) {***Condition evaluation: (bool)javaHomeArg (assuming false)
+driver.cc:662***char* dir = (char*) malloc (1024);
+driver.cc:664***parasoftTestLocation, FILE_SEP, FILE_SEP, ARCH, PLATFORM);
+driver.cc:666***_u_path_exists(...)
+driver.cc:666***if (!_u_path_exists (dir)) {***Condition evaluation: !_u_path_exists(...) (true)
+driver.cc:667***malloc(...)***Source of null value***Null value carrier: malloc(...)
+driver.cc:667***char* base = (char*) malloc (1024);
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInitialization.java">
-    <violation beginline="22" endline="22" begincolumn="21" endcolumn="70" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">UseBeforeInitialization.java:20***ObjectInputStream source = null;
-UseBeforeInitialization.java:22***new ObjectInputStream(new FileInputStream("..."))***Point where the resource is allocated***ObjectInputStream.ObjectInputStream() throws IOException***Allocated resource variable: new FileInputStream("...")***Point where the allocated resource is lost
+  <file name="/eclipsedriver_nightly/driver.cc">
+    <violation beginline="670" endline="671" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">driver.cc:653***char* javaExec = 0;
+driver.cc:655***if (javaHomeArg) {***Condition evaluation: (bool)javaHomeArg (assuming false)
+driver.cc:662***char* dir = (char*) malloc (1024);
+driver.cc:664***parasoftTestLocation, FILE_SEP, FILE_SEP, ARCH, PLATFORM);
+driver.cc:666***_u_path_exists(...)
+driver.cc:666***if (!_u_path_exists (dir)) {***Condition evaluation: !_u_path_exists(...) (true)
+driver.cc:667***char* base = (char*) malloc (1024);
+driver.cc:669***malloc(...)***Source of null value***Null value carrier: malloc(...)
+driver.cc:669***char* plugin = (char*) malloc (128);
+driver.cc:670***sprintf (plugin, "com.parasoft.xtest.jdk.eclipse.core.%s.%s_", ARCH, PLATFORM);***Null value carrier: plugin***Null pointer dereferencing point
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/MyDictionary.java">
-    <violation beginline="18" endline="18" begincolumn="8" endcolumn="32" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis.np" ruleset="Exceptions">MyDictionary.java:14***String strKey = null;***Source of null value***Null value carrier: strKey
-MyDictionary.java:15***if (key instanceof String) {***Condition evaluation: key instanceof java.lang.String (assuming false)
-MyDictionary.java:18***dict.put(strKey, value);***Null value carrier: strKey***NullPointerException point
+  <file name="/javalauncher_nightly/src/Main.cc">
+    <violation beginline="378" endline="379" begincolumn="0" endcolumn="0" rule="BD-PB-CC" priority="2" package="JavaLauncher" ruleset="Possible Bugs">Main.cc:370***bool findOnPath(const std::string&amp; exec, const std::string&amp; path, char sep, std::string&amp; ret)***Start of the path
+Main.cc:372***if (path.size() == 0) {***Condition evaluation: (path.size() == 0) (assuming false)
+Main.cc:376***std::string execWithExtension(exec);
+Main.cc:378***needsExtension(...)
+Main.cc:378***if (needsExtension(exec)) {***Point where senseless condition is used
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/NullPointer.java">
-    <violation beginline="22" endline="22" begincolumn="15" endcolumn="34" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis.np" ruleset="Exceptions">NullPointer.java:12***String sFirstLine = null;***Source of null value***Null value carrier: sFirstLine
-NullPointer.java:13***BufferedReader reader = null;
-NullPointer.java:15***new FileReader(sFileName)***FileReader.FileReader() throws FileNotFoundException
-NullPointer.java:17***catch (Exception e)
-NullPointer.java:18***System.out.println("Exception occured. " + e.toString());
-NullPointer.java:20***close(reader);
-NullPointer.java:22***sFirstLine.length()***Null value carrier: sFirstLine***NullPointerException point
+  <file name="/javalauncher_nightly/src/Unix.cc">
+    <violation beginline="109" endline="110" begincolumn="0" endcolumn="0" rule="BD-RES-LEAKS" priority="1" package="JavaLauncher" ruleset="Resources">Unix.cc:64***DIR *dir = opendir(rootDirectory.c_str());***Point where directory stream is opened***Opened directory variable: dir
+Unix.cc:65***if (dir == NULL) {***Condition evaluation: (dir == 0) (assuming false)
+Unix.cc:69***for (struct dirent *entry = readdir(dir); entry != NULL; entry = readdir(dir)) {***Loop condition evaluation: (entry != 0) (assuming false)***Not entering the loop
+Unix.cc:100***if (0 != errno) {***Condition evaluation: (0 != errno) (assuming true)
+Unix.cc:101***return errno;
+Unix.cc:109***}***Opened directory variable: dir***Point where opened directory stream is lost
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/NullPointer.java">
-    <violation beginline="27" endline="27" begincolumn="12" endcolumn="27" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis.np" ruleset="Exceptions">NullPointer.java:12***String sFirstLine = null;
-NullPointer.java:13***BufferedReader reader = null;***Source of null value***Null value carrier: reader
-NullPointer.java:15***new FileReader(sFileName)***FileReader.FileReader() throws FileNotFoundException
-NullPointer.java:17***catch (Exception e)
-NullPointer.java:18***System.out.println("Exception occured. " + e.toString());
-NullPointer.java:20***close(reader);
+  <file name="/javalauncher_nightly/src/Unix.cc">
+    <violation beginline="178" endline="179" begincolumn="0" endcolumn="0" rule="BD-RES-LEAKS" priority="1" package="JavaLauncher" ruleset="Resources">Unix.cc:171***std::string newLibPath(_libPathVariable + "=" + javaLibPath);
+Unix.cc:172***const char* oldLibPath = getenv(_libPathVariable.c_str());
+Unix.cc:174***if (oldLibPath != 0) {***Condition evaluation: (oldLibPath != 0) (assuming false)
+Unix.cc:178***strdup(...)***Point where memory is allocated***Allocated memory: strdup(...)
+Unix.cc:178***putenv(strdup(newLibPath.c_str()));***Allocated memory: strdup(...)***Point where allocated memory is lost
 </violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/mock/ConstructorExample.java">
-    <violation beginline="14" endline="14" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.mock" ruleset="Resources">ConstructorExample.java:12***RandomAccessFile file = new RandomAccessFile(path, "rw");***Point where the resource is allocated***Allocated resource variable: new RandomAccessFile(path, "rw")
-ConstructorExample.java:13***file.length()***RandomAccessFile.length() throws IOException***Allocated resource variable: file
-ConstructorExample.java:14***}***Allocated resource variable: file***Point where the allocated resource is lost
-</violation>
+  <file name="/pscom_nightly/utils/guiprops/Main.cc">
+    <violation beginline="108" endline="109" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
-    <violation beginline="36" endline="36" begincolumn="19" endcolumn="48" rule="BD.PB.CC" priority="2" package="examples.nbank" ruleset="Possible Bugs">Account.java:33***setAccountStatus(int balance)***Start of the path
-Account.java:34***if (balance &lt; BALANCE_GOLD_MIN) {***Condition evaluation: (balance &lt; 5000) (assuming false)
-Account.java:36***(balance &gt;= BALANCE_GOLD_MIN)***Point where senseless condition is used
-</violation>
+  <file name="/pscom_nightly/utils/tja/Main.cc">
+    <violation beginline="522" endline="523" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
-    <violation beginline="73" endline="73" begincolumn="19" endcolumn="48" rule="BD.PB.CC" priority="2" package="examples.nbank" ruleset="Possible Bugs">Account.java:69***setBalance(int balance)***Start of the path
-Account.java:70***_balance = balance;
-Account.java:71***if (balance &lt; BALANCE_GOLD_MIN) {***Condition evaluation: (balance &lt; 5000) (assuming false)
-Account.java:73***(balance &gt;= BALANCE_GOLD_MIN)***Point where senseless condition is used
-</violation>
+  <file name="/pscom_nightly/src/symbols/ParasoftMangler.cc">
+    <violation beginline="448" endline="449" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 51 is out of acceptable range: 'lower than 30'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
-    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.nbank" ruleset="Resources">Customer.java:70***Connection connection = null;
-Customer.java:71***PreparedStatement statement = null;
-Customer.java:72***ResultSet resultSet = null;
-Customer.java:74***Class.forName("org.gjt.mm.mysql.Driver");
-Customer.java:75***connection = DriverManager.getConnection("bank", "bank", "system")
-Customer.java:84***statement = connection.prepareStatement("select * from accounts where id=" + _ssn)***Point where the resource is allocated***Allocated resource variable: statement
-Customer.java:85***resultSet = statement.executeQuery()***PreparedStatement.executeQuery() throws SQLException
-Customer.java:90***catch (SQLException exception)
-Customer.java:91***System.err.println("Error loading data from database: " + exception.getMessage());
-Customer.java:92***return false;
-Customer.java:95***}***Allocated resource variable: statement***Point where the allocated resource is lost
-</violation>
+  <file name="/pscom_nightly/src/symbols/ParasoftMangler.cc">
+    <violation beginline="964" endline="965" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 35 is out of acceptable range: 'lower than 30'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
-    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.nbank" ruleset="Resources">Customer.java:70***Connection connection = null;
-Customer.java:71***PreparedStatement statement = null;
-Customer.java:72***ResultSet resultSet = null;
-Customer.java:74***Class.forName("org.gjt.mm.mysql.Driver");
-Customer.java:75***connection = DriverManager.getConnection("bank", "bank", "system")
-Customer.java:84***statement = connection.prepareStatement("select * from accounts where id=" + _ssn)
-Customer.java:85***resultSet = statement.executeQuery()***Point where the resource is allocated***Allocated resource variable: statement.resultSet(), resultSet
-Customer.java:86***_name = resultSet.getString(0)***ResultSet.getString() throws SQLException
-Customer.java:90***catch (SQLException exception)
-Customer.java:91***System.err.println("Error loading data from database: " + exception.getMessage());
-Customer.java:92***return false;
-Customer.java:95***}***Allocated resource variable: statement.resultSet(), resultSet***Point where the allocated resource is lost
-</violation>
+  <file name="/edgmt_nightly/src/reconstructor.c">
+    <violation beginline="403" endline="404" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 47 is out of acceptable range: 'lower than 30'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
-    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.nbank" ruleset="Resources">Customer.java:70***Connection connection = null;
-Customer.java:71***PreparedStatement statement = null;
-Customer.java:72***ResultSet resultSet = null;
-Customer.java:74***Class.forName("org.gjt.mm.mysql.Driver");
-Customer.java:75***connection = DriverManager.getConnection("bank", "bank", "system")***Point where the resource is allocated***Allocated resource variable: connection
-Customer.java:84***statement = connection.prepareStatement("select * from accounts where id=" + _ssn)***Connection.prepareStatement() throws SQLException
-Customer.java:90***catch (SQLException exception)
-Customer.java:91***System.err.println("Error loading data from database: " + exception.getMessage());
-Customer.java:92***return false;
-Customer.java:95***}***Allocated resource variable: connection***Point where the allocated resource is lost
-</violation>
+  <file name="/edgtk_nightly/src/CompilerOptsProcessor.cc">
+    <violation beginline="163" endline="164" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 42 is out of acceptable range: 'lower than 30'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
-    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.security" ruleset="Resources">InputValidation.java:83***Statement stmt = null;
-InputValidation.java:84***ResultSet rs = null;
-InputValidation.java:89***String query = "SELECT * FROM users WHERE username='" + username + "' AND password='" + password + "'";
-InputValidation.java:90***stmt = _connection.createStatement()
-InputValidation.java:91***rs = stmt.executeQuery(query)***Point where the resource is allocated***Allocated resource variable: stmt.resultSet(), rs
-InputValidation.java:92***if (rs.next()) {***Condition evaluation: rs.next() (assuming false)
-InputValidation.java:97***return false;
-InputValidation.java:102***}***Allocated resource variable: stmt.resultSet(), rs***Point where the allocated resource is lost
-</violation>
+  <file name="/edgtk_nightly/src/EdgEnums.cc">
+    <violation beginline="216" endline="217" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 481 is out of acceptable range: 'lower than 30'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
-    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.security" ruleset="Resources">InputValidation.java:83***Statement stmt = null;
-InputValidation.java:84***ResultSet rs = null;
-InputValidation.java:89***String query = "SELECT * FROM users WHERE username='" + username + "' AND password='" + password + "'";
-InputValidation.java:90***stmt = _connection.createStatement()***Point where the resource is allocated***Allocated resource variable: stmt
-InputValidation.java:91***rs = stmt.executeQuery(query)***Statement.executeQuery() throws SQLException
-InputValidation.java:98***catch (Throwable t)
-InputValidation.java:100***return false;
-InputValidation.java:102***}***Allocated resource variable: stmt***Point where the allocated resource is lost
-</violation>
+  <file name="/edgtk_nightly/src/EdgTkInitialize.cc">
+    <violation beginline="574" endline="575" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 87 is out of acceptable range: 'lower than 30'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
-    <violation beginline="123" endline="123" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.security" ruleset="Resources">InputValidation.java:120***Statement stmt = _connection.createStatement();***Point where the resource is allocated***Allocated resource variable: stmt
-InputValidation.java:121***String query = "INSERT INTO invalid_logins VALUES ('" + username + "', '" + password + "')";
-InputValidation.java:122***stmt.execute(query);***Statement.execute() throws SQLException
-InputValidation.java:123***}***Allocated resource variable: stmt***Point where the allocated resource is lost
-</violation>
+  <file name="/edgtk_nightly/src/EdgTkInitialize.cc">
+    <violation beginline="574" endline="575" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/servlets/ExampleServlet.java">
-    <violation beginline="33" endline="33" begincolumn="15" endcolumn="27" rule="BD.PB.CC" priority="2" package="examples.servlets" ruleset="Possible Bugs">ExampleServlet.java:26***tryThis(ServletContext sc)***Start of the path
-ExampleServlet.java:27***String hello = "hello";
-ExampleServlet.java:28***String result = sc.getInitParameter("hello");
-ExampleServlet.java:29***System.out.println(result);
-ExampleServlet.java:30***int n = result.length();
-ExampleServlet.java:31***if (n == 0) {***Condition evaluation: (n == 0) (assuming false)
-ExampleServlet.java:33***if (n &gt; 0) {***Point where senseless condition is used
-</violation>
+  <file name="/edgtk_nightly/src/EdgTkInitialize.cc">
+    <violation beginline="1075" endline="1076" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 91 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/ImportDirective.cc">
+    <violation beginline="480" endline="481" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 62 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/ImportDirective.cc">
+    <violation beginline="632" endline="633" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 33 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/Options.cc">
+    <violation beginline="151" endline="152" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 44 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/SourceFileInfo.cc">
+    <violation beginline="41" endline="42" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 37 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/TokensWriter.cc">
+    <violation beginline="24" endline="25" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 31 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/compileropts/Processor.cc">
+    <violation beginline="170" endline="171" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 50 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/mangler/internal/LibrarySymbolBuilder.cc">
+    <violation beginline="343" endline="344" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 47 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/wrappers/expressions/Expression.cc">
+    <violation beginline="249" endline="250" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 34 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/wrappers/expressions/Expression.cc">
+    <violation beginline="333" endline="334" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 40 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/wrappers/statements/Statement.cc">
+    <violation beginline="118" endline="119" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 30 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/src/text/Debug.cc">
+    <violation beginline="220" endline="221" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 35 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/edgtk_nightly/utils/edgtkcpfe/edgtkcfe.cc">
+    <violation beginline="417" endline="418" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/ipro_nightly/src/main.cc">
+    <violation beginline="197" endline="198" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/ppro_nightly/src/Main.cc">
+    <violation beginline="290" endline="291" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/old/wizard/com/parasoft/scripting/cpython/CPythonNativeInterpreter.cc">
+    <violation beginline="210" endline="211" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 37 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/old/wizard/rulefileengine/text/matchers/NumberMatcher.cc">
+    <violation beginline="45" endline="46" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 45 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/old/wizard/rulefileengine/RuleEnforcer.cc">
+    <violation beginline="399" endline="400" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 7 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/driver/LicenseChecker.cc">
+    <violation beginline="38" endline="39" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 37 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/driver/Main.cc">
+    <violation beginline="367" endline="368" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 30 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/driver/Main.cc">
+    <violation beginline="560" endline="561" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 50 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/driver/Main.cc">
+    <violation beginline="807" endline="808" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/driver/RulesLoader.cc">
+    <violation beginline="90" endline="91" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 30 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/options/OptionManager.cc">
+    <violation beginline="235" endline="236" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 31 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/report/OutputUtils.cc">
+    <violation beginline="67" endline="68" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 36 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/traversal/ILTreeTraverser.cc">
+    <violation beginline="782" endline="783" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 42 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/traversal/ILTreeTraverser.cc">
+    <violation beginline="1117" endline="1118" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 57 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/traversal/ILTreeTraverser.cc">
+    <violation beginline="1943" endline="1944" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 7 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/traversal/ILTreeTraverser.cc">
+    <violation beginline="2069" endline="2070" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 31 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/traversal/SrcSeqSearchEnumeration.cc">
+    <violation beginline="43" endline="44" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/wizard/CWUtil.cc">
+    <violation beginline="679" endline="680" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/codewizard_nightly/src/wizard/CppClients.cc">
+    <violation beginline="6218" endline="6219" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 40 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/xharness_nightly/Main.cc">
+    <violation beginline="189" endline="190" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 57 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/xharness_nightly/Main.cc">
+    <violation beginline="444" endline="445" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/xharness_nightly/coverage/src/BlockInfoAnalyzer.cc">
+    <violation beginline="256" endline="257" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/xharness_nightly/coverage/src/ILNewCoverage.cc">
+    <violation beginline="98" endline="99" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 7 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/xharness_nightly/coverage/src/MCDCoverageFactory.cc">
+    <violation beginline="447" endline="448" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 37 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/xharness_nightly/coverage/src/MCDCoverageFactory.cc">
+    <violation beginline="628" endline="629" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 7 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/xharness_nightly/coverage/src/MCDCoverageFactory.cc">
+    <violation beginline="733" endline="734" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 7 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/xharness_nightly/coverage/src/StatementCollector.cc">
+    <violation beginline="230" endline="231" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 30 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/xharness_nightly/stubcall/src/StubCallBuilder.cc">
+    <violation beginline="743" endline="744" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 7 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/xharness_nightly/stubcall/src/StubDeclarationBuilder.cc">
+    <violation beginline="279" endline="280" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 30 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/xharness_nightly/stubconfig/src/DeclModifiersProcessor.cc">
+    <violation beginline="417" endline="418" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 7 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/confgen_nightly/src/Main.cc">
+    <violation beginline="133" endline="134" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/cpptestcc_nightly/src/Main.cc">
+    <violation beginline="31" endline="32" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/libdetector_nightly/src/LibraryDetector.cc">
+    <violation beginline="58" endline="59" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 30 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/symmatcher_nightly/src/mangler/Gcc2Demangler.cc">
+    <violation beginline="136" endline="137" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 51 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/symmatcher_nightly/src/mangler/Gcc2Demangler.cc">
+    <violation beginline="136" endline="137" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/symmatcher_nightly/src/mangler/Gcc3Demangler.cc">
+    <violation beginline="673" endline="674" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/symmatcher_nightly/src/mangler/Gcc3Demangler.cc">
+    <violation beginline="673" endline="674" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/symmatcher_nightly/src/mangler/MsvcDemangler.cc">
+    <violation beginline="643" endline="644" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 48 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/symmatcher_nightly/src/mangler/WsccDemangler.cc">
+    <violation beginline="461" endline="462" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 37 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/lsi_nightly/src/Main.cc">
+    <violation beginline="702" endline="703" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/testrunner_nightly/src/Main.cc">
+    <violation beginline="124" endline="125" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
+  </file>
+  <file name="/optdetector_nightly/utils/optdetector/optdetector.cc">
+    <violation beginline="126" endline="127" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.CC" ruleset="Metric">Value 32 is out of acceptable range: 'lower than 30'</violation>
   </file>
 </pmd>
