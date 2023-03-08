@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0">
+    <file name="/pscom_nightly/src/unix/os/ProcessImpl.cc">
+        <violation beginline="40" endline="40" begincolumn="22" endcolumn="23" priority="1" rule="INIT-06" ruleset="Initialization">Constructor does not initialize members: '_status'</violation>
+    </file>
+    <file name="/edgtk_nightly/src/preprocessor/HashImport.cc">
+        <violation beginline="26" endline="26" begincolumn="38" endcolumn="39" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'getInstance' is passed by value</violation>
+    </file>
+    <file name="/edgtk_nightly/src/preprocessor/Header.cc">
+        <violation beginline="31" endline="31" begincolumn="26" endcolumn="27" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'getInstance' is passed by value</violation>
+    </file>
+    <file name="/edgtk_nightly/src/preprocessor/ImplicitNative.cc">
+        <violation beginline="31" endline="31" begincolumn="34" endcolumn="35" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'getInstance' is passed by value</violation>
+    </file>
+    <file name="/edgtk_nightly/src/preprocessor/Native.cc">
+        <violation beginline="31" endline="31" begincolumn="18" endcolumn="19" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'getInstance' is passed by value</violation>
+    </file>
+    <file name="/ppro_nightly/src/srlexer.cc">
+        <violation beginline="315" endline="315" begincolumn="16" endcolumn="17" priority="3" rule="OPT-14" ruleset="Optimization">Returned value from function 'do_preproc' is passed by value</violation>
+    </file>
+    <file name="/optdetector_nightly/utils/optdetector/optdetector.cc">
+        <violation beginline="63" endline="63" begincolumn="62" endcolumn="63" priority="3" rule="OPT-14" ruleset="Optimization">The parameter 'it' of function 'printOpts' is passed by value</violation>
+    </file>
+    <file name="/optdetector_nightly/utils/optdetector/optdetector.cc">
+        <violation beginline="63" endline="63" begincolumn="113" endcolumn="114" priority="3" rule="OPT-14" ruleset="Optimization">The parameter 'end' of function 'printOpts' is passed by value</violation>
+    </file>
+    <file name="/pscom_nightly/src/unix/os/RegistryKeyImpl.h">
+        <violation beginline="71" endline="71" begincolumn="67" endcolumn="68" priority="3" rule="OPT-14" ruleset="Optimization">The parameter 'value' of function 'setStringValue' is passed by value</violation>
+    </file>
+    <file name="/codewizard_nightly/include/profiling/RulePerformanceInfo.h">
+        <violation beginline="73" endline="73" begincolumn="12" endcolumn="13" priority="3" rule="CODSTA-82" ruleset="Coding Conventions">Loop does not contain terminate point</violation>
+    </file>
+    <file name="/testrunner_nightly/include/testrunner/TestRunnerData.h">
+        <violation beginline="45" endline="45" begincolumn="25" endcolumn="26" priority="3" rule="OPT-14" ruleset="Optimization">The parameter 'en' of function 'addEnum' is passed by value</violation>
+    </file>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/com/parasoft/scripting/DataInput.cc" suppressiontype="Initialization" msg="Constructor does not initialize members: '_fileBuffer'"/>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/NumberAssertClient.cc" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/NumberClient.cc" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+    <suppressedviolation filename="/pscom_nightly/include/pscom/memory/smp.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Smp' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/pscom_nightly/include/pscom/memory/smp.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Smp' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/pscom_nightly/include/pscom/io/Path.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Path' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/pscom_nightly/include/pscom/tja/values/Value.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Value' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/pscom_nightly/include/pscom/tja/values/Value.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Value' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/pscom_nightly/include/pscom/tja/values/Value.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Value' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/pscom_nightly/include/pscom/tja/values/Value.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Value' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/edgtk_nightly/include/edgtk/wrappers/Routine.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Routine' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+    <suppressedviolation filename="/codewizard_nightly/old/wizard/rulefileengine/Expr.h" suppressiontype="MISRA C 2004" msg="Do not use &quot;==&quot; or &quot;!=&quot; to test floating-point expression"/>
+    <suppressedviolation filename="/edgtk_nightly/include/edgtk/wrappers/statements/Statement.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'Statement' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/pscom_nightly/include/pscom/options/StreamSource.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'StreamSource' allowing conversion should be made explicit"/>
+    <suppressedviolation filename="/edgtk_nightly/include/edgtk/wrappers/SourceCorrespondence.h" suppressiontype="Coding Conventions for C++" msg="Constructor 'SourceCorrespondence' allowing conversion should be made explicit"/>
+</pmd>
