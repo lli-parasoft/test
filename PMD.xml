@@ -1,123 +1,331 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="C++test" timestamp="2023-03-07T10:21:07+01:00">
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="93" endline="94" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">DeadLock.cpp:90***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
-DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();***Usage of "participants" in first critical section
-DeadLock.cpp:94***position.translate(*velocityArray[i]);
-DeadLock.cpp:95***ring.contains(...)
-DeadLock.cpp:95***assertion(ring.contains(position), "Participant is out of ring");
-DeadLock.cpp:98***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
-DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (true)***Entering the loop
-DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();***Usage of "participants" in second critical section
+<pmd version="DTP Engine for Java" timestamp="2023-03-08T02:30:09+01:00">
+  <file name="/com.parasoft:demo/src/main/java/examples/metrics/MetricsExample.java">
+    <violation beginline="13" endline="14" begincolumn="0" endcolumn="0" rule="METRIC.NBD" priority="3" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java">
+    <violation beginline="13" endline="13" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseGSS.java:10***byte[] inputBuff = new byte[256];
+AlwaysCloseGSS.java:11***GSSManager.getInstance().createContext(tokens).initSecContext(inputBuff, 0, 256);***Point where the resource is allocated***Allocated resource variable: GSSManager.getInstance().createContext(tokens)
+AlwaysCloseGSS.java:13***}***Allocated resource variable: GSSManager.getInstance().createContext(tokens)***Point where the allocated resource is lost
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="94" endline="95" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">DeadLock.cpp:90***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
-DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
-DeadLock.cpp:94***position.translate(*velocityArray[i]);***Usage of "velocityArray" in first critical section
-DeadLock.cpp:95***ring.contains(...)
-DeadLock.cpp:95***assertion(ring.contains(position), "Participant is out of ring");
-DeadLock.cpp:98***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
-DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (true)***Entering the loop
-DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
-DeadLock.cpp:94***position.translate(*velocityArray[i]);***Usage of "velocityArray" in second critical section
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java">
+    <violation beginline="29" endline="29" begincolumn="16" endcolumn="34" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseGSS.java:19***GSSContext context = null;***Source of null value***Null value carrier: context
+AlwaysCloseGSS.java:21***context = GSSManager.getInstance().createContext(tokens)***GSSManager.createContext() throws GSSException
+AlwaysCloseGSS.java:25***catch (Exception ioe)
+AlwaysCloseGSS.java:26***System.out.println("Exception occured: " + ioe);
+AlwaysCloseGSS.java:29***context.dispose();***Null value carrier: context***NullPointerException point
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="95" endline="96" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Physics" ruleset="Threads &amp; Synchronization">DeadLock.cpp:90***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
-DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
-DeadLock.cpp:94***position.translate(*velocityArray[i]);
-DeadLock.cpp:95***ring.contains(...)***Usage of "ring" in first critical section
-DeadLock.cpp:95***assertion(ring.contains(position), "Participant is out of ring");
-DeadLock.cpp:98***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
-DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (true)***Entering the loop
-DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
-DeadLock.cpp:94***position.translate(*velocityArray[i]);
-DeadLock.cpp:95***ring.contains(...)***Usage of "ring" in second critical section
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java">
+    <violation beginline="16" endline="16" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseImages.java:12***Image image = null;
+AlwaysCloseImages.java:14***ImageReader imgReader = spi.createReaderInstance();***Point where the resource is allocated***Allocated resource variable: imgReader
+AlwaysCloseImages.java:15***image = imgReader.read(0)***ImageReader.read() throws IOException
+AlwaysCloseImages.java:16***}***Allocated resource variable: imgReader***Point where the allocated resource is lost
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="103" endline="104" begincolumn="0" endcolumn="0" rule="BD-TRS-LOCK" priority="1" package="Physics" ruleset="Threads &amp; Synchronization">DeadLock.cpp:90***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-DeadLock.cpp:91***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
-DeadLock.cpp:92***LOCK_ACQUIRE(changePositionMutex);***Point where the lock is acquired
-DeadLock.cpp:93***Point&amp; position = participants[i]-&gt;getPosition();
-DeadLock.cpp:94***position.translate(*velocityArray[i]);
-DeadLock.cpp:95***ring.contains(...)
-DeadLock.cpp:95***assertion(ring.contains(position), "Participant is out of ring");***assertion() throws const char *
-DeadLock.cpp:103***}***Point prior to which the lock is to be released
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java">
+    <violation beginline="31" endline="31" begincolumn="12" endcolumn="32" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseImages.java:23***Image image = null;
+AlwaysCloseImages.java:24***ImageReader imgReader = null;***Source of null value***Null value carrier: imgReader
+AlwaysCloseImages.java:26***imgReader = spi.createReaderInstance()***ImageReaderSpi.createReaderInstance() throws IOException
+AlwaysCloseImages.java:28***catch (Exception e)
+AlwaysCloseImages.java:29***System.out.println("Exception occured: " + e);
+AlwaysCloseImages.java:31***imgReader.dispose();***Null value carrier: imgReader***NullPointerException point
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="119" endline="120" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">DeadLock.cpp:117***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-DeadLock.cpp:118***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:119***ring.getPosition()***Usage of "ring" in first critical section
-DeadLock.cpp:119***ring.getPosition().translate(*currentCameraVelocity);
-DeadLock.cpp:120***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
-DeadLock.cpp:122***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming false)***Not entering the loop
-DeadLock.cpp:128***SLEEP(STEP);
-DeadLock.cpp:117***while (!exitGame) {***Loop condition evaluation: !exitGame (true)***Entering the loop
-DeadLock.cpp:118***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:119***ring.getPosition()***Usage of "ring" in second critical section
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseLogging.java">
+    <violation beginline="13" endline="13" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseLogging.java:10***ConsoleHandler handler = new ConsoleHandler();***Point where the resource is allocated***Allocated resource variable: new ConsoleHandler()
+AlwaysCloseLogging.java:11***LogRecord record = new LogRecord(level, message);***Allocated resource variable: handler
+AlwaysCloseLogging.java:12***handler.publish(record);
+AlwaysCloseLogging.java:13***}***Allocated resource variable: handler***Point where the allocated resource is lost
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="124" endline="125" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">DeadLock.cpp:117***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-DeadLock.cpp:118***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:119***ring.getPosition()
-DeadLock.cpp:119***ring.getPosition().translate(*currentCameraVelocity);***Usage of "currentCameraVelocity" in first critical section
-DeadLock.cpp:120***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
-DeadLock.cpp:122***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
-DeadLock.cpp:123***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:124***participants[i]-&gt;getPosition()
-DeadLock.cpp:124***participants[i]-&gt;getPosition().translate(*currentCameraVelocity);***Usage of "currentCameraVelocity" in second critical section
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
+    <violation beginline="18" endline="18" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseNIOChannels.java:13***FileInputStream fInput = new FileInputStream(filename);
+AlwaysCloseNIOChannels.java:14***FileChannel channel = fInput.getChannel();***Point where the resource is allocated***Allocated resource variable: &lt;FileInputStream referenced by channel&gt;.getChannel(), fInput.getChannel(), channel
+AlwaysCloseNIOChannels.java:15***ByteBuffer dst = ByteBuffer.allocate(512);
+AlwaysCloseNIOChannels.java:16***int read = channel.read(dst);***FileChannel.read() throws IOException
+AlwaysCloseNIOChannels.java:18***}***Allocated resource variable: &lt;FileInputStream referenced by channel&gt;.getChannel(), fInput.getChannel(), channel***Point where the allocated resource is lost
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DeadLock.cpp">
-    <violation beginline="124" endline="125" begincolumn="0" endcolumn="0" rule="BD-TRS-DIFCS" priority="2" package="Render" ruleset="Threads &amp; Synchronization">DeadLock.cpp:117***while (!exitGame) {***Loop condition evaluation: !exitGame (assuming true)***Entering the loop
-DeadLock.cpp:118***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:119***ring.getPosition()
-DeadLock.cpp:119***ring.getPosition().translate(*currentCameraVelocity);
-DeadLock.cpp:120***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
-DeadLock.cpp:122***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (assuming true)***Entering the loop
-DeadLock.cpp:123***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:124***participants[i]-&gt;getPosition()***Usage of "participants" in first critical section
-DeadLock.cpp:124***participants[i]-&gt;getPosition().translate(*currentCameraVelocity);
-DeadLock.cpp:125***LOCK_RELEASE(changePositionMutex);***Unlocking: &amp;changePositionMutex
-DeadLock.cpp:126***draw(participants[i]);
-DeadLock.cpp:122***for(int i = 0; i &lt; participantsCount; i++) {***Loop condition evaluation: (i &lt; participantsCount) (true)***Entering the loop
-DeadLock.cpp:123***LOCK_ACQUIRE(changePositionMutex);***Locking: &amp;changePositionMutex
-DeadLock.cpp:124***participants[i]-&gt;getPosition()***Usage of "participants" in second critical section
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
+    <violation beginline="35" endline="35" begincolumn="16" endcolumn="32" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseNIOChannels.java:24***FileChannel channel = null;***Source of null value***Null value carrier: channel
+AlwaysCloseNIOChannels.java:26***new FileInputStream(filename)***FileInputStream.FileInputStream() throws FileNotFoundException
+AlwaysCloseNIOChannels.java:31***catch (Exception ioe)
+AlwaysCloseNIOChannels.java:32***System.out.println("Exception occured: " + ioe);
+AlwaysCloseNIOChannels.java:35***channel.close();***Null value carrier: channel***NullPointerException point
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/DivisionByZero.cpp">
-    <violation beginline="5" endline="6" begincolumn="0" endcolumn="0" rule="BD-PB-ZERO" priority="1" ruleset="Possible Bugs">DivisionByZero.cpp:5***shape2-&gt;getArea()***Start of the path
-DivisionByZero.cpp:5***return shape1-&gt;getArea()/shape2-&gt;getArea();***Point of division by zero
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
+    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseRAFs.java:8***String res = null;
+AlwaysCloseRAFs.java:10***RandomAccessFile raf = new RandomAccessFile(sFileName, sMode);***Point where the resource is allocated***Allocated resource variable: new RandomAccessFile(sFileName, sMode)
+AlwaysCloseRAFs.java:11***byte[] bytes = new byte[512];***Allocated resource variable: raf
+AlwaysCloseRAFs.java:12***int read = raf.read(bytes, offset, bytes.length);***RandomAccessFile.read() throws IOException
+AlwaysCloseRAFs.java:14***}***Allocated resource variable: raf***Point where the allocated resource is lost
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp">
-    <violation beginline="8" endline="9" begincolumn="0" endcolumn="0" rule="BD-SECURITY-TDALLOC" priority="2" ruleset="Security">MemoryLeak.cpp:7***fscanf(file, "%d", pSize);***Tainting point
-MemoryLeak.cpp:8***int* data = new int[*pSize];***Point where the array is allocated
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
+    <violation beginline="32" endline="32" begincolumn="16" endcolumn="28" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseRAFs.java:21***String res = null;
+AlwaysCloseRAFs.java:22***RandomAccessFile raf = null;***Source of null value***Null value carrier: raf
+AlwaysCloseRAFs.java:24***new RandomAccessFile(sFileName, sMode)***RandomAccessFile.RandomAccessFile() throws FileNotFoundException
+AlwaysCloseRAFs.java:28***catch (Exception e)
+AlwaysCloseRAFs.java:29***System.out.println();
+AlwaysCloseRAFs.java:32***raf.close();***Null value carrier: raf***NullPointerException point
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/MemoryLeak.cpp">
-    <violation beginline="9" endline="10" begincolumn="0" endcolumn="0" rule="BD-SECURITY-TDLOOP" priority="1" ruleset="Security">MemoryLeak.cpp:7***fscanf(file, "%d", pSize);***Tainting point***Tainted data: pSize[]
-MemoryLeak.cpp:8***int* data = new int[*pSize];
-MemoryLeak.cpp:9***for (int i = 0; i &lt; *pSize; i++) {***Tainted data: pSize[]***Tainted data use in a loop condition
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
+    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">AlwaysCloseSockets.java:12***Socket sock = srvSocket.accept();***Point where the resource is allocated***Allocated resource variable: sock
+AlwaysCloseSockets.java:14***}***Allocated resource variable: sock***Point where the allocated resource is lost
 </violation>
   </file>
-  <file name="/FlowAnalysisCpp/FlowAnalysisCpp/NullPointer.cpp">
-    <violation beginline="11" endline="12" begincolumn="0" endcolumn="0" rule="BD-PB-NP" priority="1" ruleset="Possible Bugs">NullPointer.cpp:7***Point* point = 0;***Source of null value***Null value carrier: point
-NullPointer.cpp:8***if (argc &gt; 3) {***Condition evaluation: (argc &gt; 3) (assuming false)
-NullPointer.cpp:11***point-&gt;reflectAcrossX();***Null value carrier: point***Null pointer dereferencing point
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
+    <violation beginline="28" endline="28" begincolumn="16" endcolumn="29" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseSockets.java:20***Socket sock = null;***Source of null value***Null value carrier: sock
+AlwaysCloseSockets.java:22***sock = srvSocket.accept()***ServerSocket.accept() throws IOException
+AlwaysCloseSockets.java:24***catch (IOException ioe)
+AlwaysCloseSockets.java:25***System.out.println("Exception occured: " + ioe);
+AlwaysCloseSockets.java:28***sock.close();***Null value carrier: sock***NullPointerException point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java">
+    <violation beginline="52" endline="52" begincolumn="12" endcolumn="28" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseXMLEncDec.java:43***XMLEncoder encoder = null;***Source of null value***Null value carrier: encoder
+AlwaysCloseXMLEncDec.java:45***new XMLEncoder(out)***XMLEncoder.XMLEncoder() throws IllegalArgumentException
+AlwaysCloseXMLEncDec.java:49***catch (Exception e)
+AlwaysCloseXMLEncDec.java:50***System.out.println("Exception occured: " + e);
+AlwaysCloseXMLEncDec.java:52***encoder.close();***Null value carrier: encoder***NullPointerException point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java">
+    <violation beginline="71" endline="71" begincolumn="12" endcolumn="28" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">AlwaysCloseXMLEncDec.java:57***Vector vObjs = new Vector();
+AlwaysCloseXMLEncDec.java:58***XMLDecoder decoder = null;***Source of null value***Null value carrier: decoder
+AlwaysCloseXMLEncDec.java:60***new XMLDecoder(in)***XMLDecoder.XMLDecoder() throws IllegalArgumentException
+AlwaysCloseXMLEncDec.java:68***catch (Exception e)
+AlwaysCloseXMLEncDec.java:69***System.out.println("Exception occured: " + e);
+AlwaysCloseXMLEncDec.java:71***decoder.close();***Null value carrier: decoder***NullPointerException point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
+    <violation beginline="17" endline="17" begincolumn="15" endcolumn="38" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">DivisionByZero.java:14***calculateDiscountedSum(int code, float initialSum, Consumer person)***Start of the path
+DivisionByZero.java:15***float discountedSum = calculateCommonDiscountedSum(initialSum);
+DivisionByZero.java:16***if (code == PERSONAL_DISCOUNT) {***Condition evaluation: (code == 0) (assuming false)
+DivisionByZero.java:17***if (code == DISCOUNT) {***Point where senseless condition is used
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
+    <violation beginline="18" endline="18" begincolumn="15" endcolumn="43" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">DivisionByZero.java:14***calculateDiscountedSum(int code, float initialSum, Consumer person)***Start of the path
+DivisionByZero.java:15***float discountedSum = calculateCommonDiscountedSum(initialSum);
+DivisionByZero.java:16***if (code == PERSONAL_DISCOUNT) {***Condition evaluation: (code == 0) (assuming false)
+DivisionByZero.java:17***if (code == DISCOUNT) {***Condition evaluation: (code == 0) (false)
+DivisionByZero.java:18***if (code == SPECIAL_OFFER) {***Point where senseless condition is used
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
+    <violation beginline="22" endline="22" begincolumn="12" endcolumn="75" rule="BD.PB.ZERO" priority="1" package="examples.flowanalysis" ruleset="Possible Bugs">DivisionByZero.java:15***float discountedSum = calculateCommonDiscountedSum(initialSum);***Start of the path
+DivisionByZero.java:16***if (code == PERSONAL_DISCOUNT) {***Condition evaluation: (code == 0) (assuming true)
+DivisionByZero.java:21***if (code == PERSONAL_DISCOUNT) {***Condition evaluation: (code == 0) (true)
+DivisionByZero.java:22***float progressionCoef = person.getOverallSum() / discountedSum;***Point of division by zero
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/FilesInjection.java">
+    <violation beginline="27" endline="27" begincolumn="12" endcolumn="25" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis" ruleset="Exceptions">FilesInjection.java:21***FileOutputStream fOut = null;***Source of null value***Null value carrier: fOut
+FilesInjection.java:23***String sFileName = storyName;
+FilesInjection.java:24***new FileOutputStream(sFileName)***FileOutputStream.FileOutputStream() throws FileNotFoundException
+FilesInjection.java:27***fOut.close();***Null value carrier: fOut***NullPointerException point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/IncorrectIteratorUsage.java">
+    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" rule="BD.CO.ITMOD" priority="1" package="examples.flowanalysis" ruleset="Collections">IncorrectIteratorUsage.java:15***Iterator&lt;?&gt; iter = collection.iterator();***Iterator creation point***Tracked iterators: iter***Tracked collections: collection
+IncorrectIteratorUsage.java:16***while (iter.hasNext()) {***Loop condition evaluation: iter.hasNext() (assuming true)***Entering the loop
+IncorrectIteratorUsage.java:17***Object obj = iter.next();
+IncorrectIteratorUsage.java:18***if (tp.isAssignableFrom(obj.getClass())) {***Condition evaluation: tp.isAssignableFrom(obj.getClass()) (assuming false)
+IncorrectIteratorUsage.java:21***collection.remove(obj);***Collection modification point
+IncorrectIteratorUsage.java:16***iter.hasNext()***Tracked iterators: iter***Tracked collections: collection***Iterator usage point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientCollectionRemoval.java">
+    <violation beginline="15" endline="15" begincolumn="15" endcolumn="29" rule="BD.CO.ITMOD" priority="1" package="examples.flowanalysis" ruleset="Collections">InefficientCollectionRemoval.java:14***Iterator&lt;?&gt; iter = collection.iterator();***Iterator creation point***Tracked iterators: iter***Tracked collections: collection
+InefficientCollectionRemoval.java:15***while (iter.hasNext()) {***Loop condition evaluation: iter.hasNext() (assuming true)***Entering the loop
+InefficientCollectionRemoval.java:16***Object element = iter.next();
+InefficientCollectionRemoval.java:17***collection.remove(element);***Collection modification point
+InefficientCollectionRemoval.java:15***iter.hasNext()***Tracked iterators: iter***Tracked collections: collection***Iterator usage point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
+    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" rule="BD.CO.ITMOD" priority="1" package="examples.flowanalysis" ruleset="Collections">InefficientMapRemoval.java:15***Iterator&lt;?&gt; iter = map.keySet().iterator();***Iterator creation point***Tracked iterators: iter***Tracked collections: map
+InefficientMapRemoval.java:16***while (iter.hasNext()) {***Loop condition evaluation: iter.hasNext() (assuming true)***Entering the loop
+InefficientMapRemoval.java:17***Object key = iter.next();
+InefficientMapRemoval.java:18***map.remove(key);***Collection modification point
+InefficientMapRemoval.java:16***iter.hasNext()***Tracked iterators: iter***Tracked collections: map***Iterator usage point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
+    <violation beginline="29" endline="29" begincolumn="15" endcolumn="29" rule="BD.CO.ITMOD" priority="1" package="examples.flowanalysis" ruleset="Collections">InefficientMapRemoval.java:28***Iterator&lt;?&gt; iter = map.entrySet().iterator();***Iterator creation point***Tracked iterators: iter***Tracked collections: map
+InefficientMapRemoval.java:29***while (iter.hasNext()) {***Loop condition evaluation: iter.hasNext() (assuming true)***Entering the loop
+InefficientMapRemoval.java:30***Entry&lt;?, ?&gt; entry = (Entry&lt;?, ?&gt;) iter.next();
+InefficientMapRemoval.java:31***Object key = entry.getKey();
+InefficientMapRemoval.java:32***map.remove(key);***Collection modification point
+InefficientMapRemoval.java:29***iter.hasNext()***Tracked iterators: iter***Tracked collections: map***Iterator usage point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
+    <violation beginline="11" endline="11" begincolumn="15" endcolumn="56" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">UnreachableCode.java:8***printCalculationResult(Object result)***Start of the path
+UnreachableCode.java:9***if (result instanceof Exception) {***Condition evaluation: result instanceof java.lang.Exception (assuming false)
+UnreachableCode.java:11***if (result instanceof RuntimeException) {***Point where senseless condition is used
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
+    <violation beginline="23" endline="23" begincolumn="19" endcolumn="39" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">UnreachableCode.java:19***guessFigure(boolean round, boolean volumetric)***Start of the path
+UnreachableCode.java:20***final int figure;
+UnreachableCode.java:21***if (round &amp;&amp; volumetric) {***Condition evaluation: round (assuming true)***Condition evaluation: volumetric (assuming false)***Condition evaluation: round &amp;&amp; volumetric (false)
+UnreachableCode.java:23***round &amp;&amp; !volumetric***Condition evaluation: round (true)***Point where senseless condition is used
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
+    <violation beginline="25" endline="25" begincolumn="19" endcolumn="25" rule="BD.PB.CC" priority="2" package="examples.flowanalysis" ruleset="Possible Bugs">UnreachableCode.java:19***guessFigure(boolean round, boolean volumetric)***Start of the path
+UnreachableCode.java:20***final int figure;
+UnreachableCode.java:21***if (round &amp;&amp; volumetric) {***Condition evaluation: round (assuming false)***Condition evaluation: round &amp;&amp; volumetric (false)
+UnreachableCode.java:23***if (round &amp;&amp; !volumetric) {***Condition evaluation: round (false)***Condition evaluation: round &amp;&amp; !volumetric (false)
+UnreachableCode.java:25***!round***Point where senseless condition is used
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java">
+    <violation beginline="40" endline="40" begincolumn="12" endcolumn="60" rule="BD.PB.NOTINITCTOR" priority="1" package="examples.flowanalysis" ruleset="Possible Bugs">UseBeforeInConstructorInitialization.java:28***int minLoginLength = 7;***Not explicitly initialized value: this.minLoginLength***Point of implicit initialization
+UseBeforeInConstructorInitialization.java:31***super(name, password);
+UseBeforeInConstructorInitialization.java:28***int minLoginLength = 7;***Point of explicit initialization
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java">
+    <violation beginline="40" endline="40" begincolumn="16" endcolumn="57" rule="BD.PB.NOTEXPLINIT" priority="1" package="examples.flowanalysis" ruleset="Possible Bugs">UseBeforeInConstructorInitialization.java:28***int minLoginLength = 7;***Source of implicitly initialized value***Not explicitly initialized value: this.minLoginLength
+UseBeforeInConstructorInitialization.java:31***super(name, password);
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInitialization.java">
+    <violation beginline="22" endline="22" begincolumn="21" endcolumn="70" rule="BD.RES.LEAKS" priority="1" package="examples.flowanalysis" ruleset="Resources">UseBeforeInitialization.java:20***ObjectInputStream source = null;
+UseBeforeInitialization.java:22***new ObjectInputStream(new FileInputStream("..."))***Point where the resource is allocated***ObjectInputStream.ObjectInputStream() throws IOException***Allocated resource variable: new FileInputStream("...")***Point where the allocated resource is lost
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/MyDictionary.java">
+    <violation beginline="18" endline="18" begincolumn="8" endcolumn="32" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis.np" ruleset="Exceptions">MyDictionary.java:14***String strKey = null;***Source of null value***Null value carrier: strKey
+MyDictionary.java:15***if (key instanceof String) {***Condition evaluation: key instanceof java.lang.String (assuming false)
+MyDictionary.java:18***dict.put(strKey, value);***Null value carrier: strKey***NullPointerException point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/NullPointer.java">
+    <violation beginline="22" endline="22" begincolumn="15" endcolumn="34" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis.np" ruleset="Exceptions">NullPointer.java:12***String sFirstLine = null;***Source of null value***Null value carrier: sFirstLine
+NullPointer.java:13***BufferedReader reader = null;
+NullPointer.java:15***new FileReader(sFileName)***FileReader.FileReader() throws FileNotFoundException
+NullPointer.java:17***catch (Exception e)
+NullPointer.java:18***System.out.println("Exception occured. " + e.toString());
+NullPointer.java:20***close(reader);
+NullPointer.java:22***sFirstLine.length()***Null value carrier: sFirstLine***NullPointerException point
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/NullPointer.java">
+    <violation beginline="27" endline="27" begincolumn="12" endcolumn="27" rule="BD.EXCEPT.NP" priority="1" package="examples.flowanalysis.np" ruleset="Exceptions">NullPointer.java:12***String sFirstLine = null;
+NullPointer.java:13***BufferedReader reader = null;***Source of null value***Null value carrier: reader
+NullPointer.java:15***new FileReader(sFileName)***FileReader.FileReader() throws FileNotFoundException
+NullPointer.java:17***catch (Exception e)
+NullPointer.java:18***System.out.println("Exception occured. " + e.toString());
+NullPointer.java:20***close(reader);
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/mock/ConstructorExample.java">
+    <violation beginline="14" endline="14" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.mock" ruleset="Resources">ConstructorExample.java:12***RandomAccessFile file = new RandomAccessFile(path, "rw");***Point where the resource is allocated***Allocated resource variable: new RandomAccessFile(path, "rw")
+ConstructorExample.java:13***file.length()***RandomAccessFile.length() throws IOException***Allocated resource variable: file
+ConstructorExample.java:14***}***Allocated resource variable: file***Point where the allocated resource is lost
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
+    <violation beginline="36" endline="36" begincolumn="19" endcolumn="48" rule="BD.PB.CC" priority="2" package="examples.nbank" ruleset="Possible Bugs">Account.java:33***setAccountStatus(int balance)***Start of the path
+Account.java:34***if (balance &lt; BALANCE_GOLD_MIN) {***Condition evaluation: (balance &lt; 5000) (assuming false)
+Account.java:36***(balance &gt;= BALANCE_GOLD_MIN)***Point where senseless condition is used
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
+    <violation beginline="73" endline="73" begincolumn="19" endcolumn="48" rule="BD.PB.CC" priority="2" package="examples.nbank" ruleset="Possible Bugs">Account.java:69***setBalance(int balance)***Start of the path
+Account.java:70***_balance = balance;
+Account.java:71***if (balance &lt; BALANCE_GOLD_MIN) {***Condition evaluation: (balance &lt; 5000) (assuming false)
+Account.java:73***(balance &gt;= BALANCE_GOLD_MIN)***Point where senseless condition is used
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
+    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.nbank" ruleset="Resources">Customer.java:70***Connection connection = null;
+Customer.java:71***PreparedStatement statement = null;
+Customer.java:72***ResultSet resultSet = null;
+Customer.java:74***Class.forName("org.gjt.mm.mysql.Driver");
+Customer.java:75***connection = DriverManager.getConnection("bank", "bank", "system")
+Customer.java:84***statement = connection.prepareStatement("select * from accounts where id=" + _ssn)***Point where the resource is allocated***Allocated resource variable: statement
+Customer.java:85***resultSet = statement.executeQuery()***PreparedStatement.executeQuery() throws SQLException
+Customer.java:90***catch (SQLException exception)
+Customer.java:91***System.err.println("Error loading data from database: " + exception.getMessage());
+Customer.java:92***return false;
+Customer.java:95***}***Allocated resource variable: statement***Point where the allocated resource is lost
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
+    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.nbank" ruleset="Resources">Customer.java:70***Connection connection = null;
+Customer.java:71***PreparedStatement statement = null;
+Customer.java:72***ResultSet resultSet = null;
+Customer.java:74***Class.forName("org.gjt.mm.mysql.Driver");
+Customer.java:75***connection = DriverManager.getConnection("bank", "bank", "system")
+Customer.java:84***statement = connection.prepareStatement("select * from accounts where id=" + _ssn)
+Customer.java:85***resultSet = statement.executeQuery()***Point where the resource is allocated***Allocated resource variable: statement.resultSet(), resultSet
+Customer.java:86***_name = resultSet.getString(0)***ResultSet.getString() throws SQLException
+Customer.java:90***catch (SQLException exception)
+Customer.java:91***System.err.println("Error loading data from database: " + exception.getMessage());
+Customer.java:92***return false;
+Customer.java:95***}***Allocated resource variable: statement.resultSet(), resultSet***Point where the allocated resource is lost
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
+    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.nbank" ruleset="Resources">Customer.java:70***Connection connection = null;
+Customer.java:71***PreparedStatement statement = null;
+Customer.java:72***ResultSet resultSet = null;
+Customer.java:74***Class.forName("org.gjt.mm.mysql.Driver");
+Customer.java:75***connection = DriverManager.getConnection("bank", "bank", "system")***Point where the resource is allocated***Allocated resource variable: connection
+Customer.java:84***statement = connection.prepareStatement("select * from accounts where id=" + _ssn)***Connection.prepareStatement() throws SQLException
+Customer.java:90***catch (SQLException exception)
+Customer.java:91***System.err.println("Error loading data from database: " + exception.getMessage());
+Customer.java:92***return false;
+Customer.java:95***}***Allocated resource variable: connection***Point where the allocated resource is lost
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
+    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.security" ruleset="Resources">InputValidation.java:83***Statement stmt = null;
+InputValidation.java:84***ResultSet rs = null;
+InputValidation.java:89***String query = "SELECT * FROM users WHERE username='" + username + "' AND password='" + password + "'";
+InputValidation.java:90***stmt = _connection.createStatement()
+InputValidation.java:91***rs = stmt.executeQuery(query)***Point where the resource is allocated***Allocated resource variable: stmt.resultSet(), rs
+InputValidation.java:92***if (rs.next()) {***Condition evaluation: rs.next() (assuming false)
+InputValidation.java:97***return false;
+InputValidation.java:102***}***Allocated resource variable: stmt.resultSet(), rs***Point where the allocated resource is lost
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
+    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" rule="BD.RES.LEAKS" priority="1" package="examples.security" ruleset="Resources">InputValidation.java:83***Statement stmt = null;
+InputValidation.java:84***ResultSet rs = null;
+InputValidation.java:89***String query = "SELECT * FROM users WHERE username='" + username + "' AND password='" + password + "'";
+InputValidation.java:90***stmt = _connection.createStatement()***Point where the resource is allocated***Allocated resource variable: stmt
+InputValidation.java:91***rs = stmt.executeQuery(query)***Statement.executeQuery() throws SQLException
+InputValidation.java:98***catch (Throwable t)
+InputValidation.java:100***return false;
+InputValidation.java:102***}***Allocated resource variable: stmt***Point where the allocated resource is lost
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
+    <violation beginline="123" endline="123" begincolumn="8" endcolumn="9" rule="BD.RES.LEAKS" priority="1" package="examples.security" ruleset="Resources">InputValidation.java:120***Statement stmt = _connection.createStatement();***Point where the resource is allocated***Allocated resource variable: stmt
+InputValidation.java:121***String query = "INSERT INTO invalid_logins VALUES ('" + username + "', '" + password + "')";
+InputValidation.java:122***stmt.execute(query);***Statement.execute() throws SQLException
+InputValidation.java:123***}***Allocated resource variable: stmt***Point where the allocated resource is lost
+</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/servlets/ExampleServlet.java">
+    <violation beginline="33" endline="33" begincolumn="15" endcolumn="27" rule="BD.PB.CC" priority="2" package="examples.servlets" ruleset="Possible Bugs">ExampleServlet.java:26***tryThis(ServletContext sc)***Start of the path
+ExampleServlet.java:27***String hello = "hello";
+ExampleServlet.java:28***String result = sc.getInitParameter("hello");
+ExampleServlet.java:29***System.out.println(result);
+ExampleServlet.java:30***int n = result.length();
+ExampleServlet.java:31***if (n == 0) {***Condition evaluation: (n == 0) (assuming false)
+ExampleServlet.java:33***if (n &gt; 0) {***Point where senseless condition is used
 </violation>
   </file>
 </pmd>
