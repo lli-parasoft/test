@@ -7,9 +7,6 @@
     <violation beginline="24" endline="24" begincolumn="12" endcolumn="18" priority="3" rule="UC.AUL" ruleset="Unused Code" package="examples.eval">Avoid unused label: case10</violation>
   </file>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
-    <violation beginline="16" endline="16" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
-  </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
     <violation beginline="29" endline="29" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
   </file>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
