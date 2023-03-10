@@ -376,22 +376,4 @@
     <suppressedviolation filename="/edgtk_nightly/src/wrappers/expressions/Operation.cc" suppressiontype="Metric" msg="Value 122 is out of acceptable range: 'lower than 30'"/>
     <suppressedviolation filename="/xharness_nightly/coverage/src/CoverageMapFile.cc" suppressiontype="Metric" msg="Value 31 is out of acceptable range: 'lower than 30'"/>
     <suppressedviolation filename="/libdetector_nightly/src/RealCmdLnExtractor.cc" suppressiontype="Metric" msg="Value 36 is out of acceptable range: 'lower than 30'"/>
-    <ruleset>
-    <description></description>
-    <exclude-pattern></exclude-pattern>
-    <include-pattern></include-pattern>
-    <rule>
-        <description>aaaaaaaaaaaaaaaaaaa</description>
-        <priority>bbbbbbbbbb</priority>
-        <properties>
-            <property name="propertyName">
-                 <value>
-                    cccccccccc
-                 </value>
-            </property>
-        </properties>
-        <exclude name="excludeName">dddddddddd</exclude>
-        <example>eeeeeeeee</example>
-    </rule>
-</ruleset>
 </pmd>
