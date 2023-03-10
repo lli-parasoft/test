@@ -1,338 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/eval/Simple.java">
-    <violation beginline="24" endline="24" begincolumn="12" endcolumn="18" priority="2" rule="PB.TYPO.TLS" ruleset="" package="examples.eval">Text label 'case10' may be a typo for 'case 10'</violation>
+    <violation beginline="24" endline="24" begincolumn="12" endcolumn="18" priority="2" rule="PB.TYPO.TLS" ruleset="Typographical Errors" package="examples.eval">Text label 'case10' may be a typo for 'case 10'</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/eval/Simple.java">
-    <violation beginline="24" endline="24" begincolumn="12" endcolumn="18" priority="3" rule="UC.AUL" ruleset="" package="examples.eval">Avoid unused label: case10</violation>
+    <violation beginline="24" endline="24" begincolumn="12" endcolumn="18" priority="3" rule="UC.AUL" ruleset="Unused Code" package="examples.eval">Avoid unused label: case10</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
-    <violation beginline="16" endline="16" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="" package="examples.flowanalysis">Variable 'read' is never used</violation>
+    <violation beginline="16" endline="16" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
-    <violation beginline="29" endline="29" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="" package="examples.flowanalysis">Variable 'read' is never used</violation>
+    <violation beginline="29" endline="29" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
-    <violation beginline="12" endline="12" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="" package="examples.flowanalysis">Variable 'read' is never used</violation>
+    <violation beginline="12" endline="12" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
-    <violation beginline="26" endline="26" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="" package="examples.flowanalysis">Variable 'read' is never used</violation>
+    <violation beginline="26" endline="26" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
-    <violation beginline="12" endline="12" begincolumn="19" endcolumn="23" priority="3" rule="UC.AURV" ruleset="" package="examples.flowanalysis">Variable 'sock' is never used</violation>
+    <violation beginline="12" endline="12" begincolumn="19" endcolumn="23" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'sock' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
-    <violation beginline="17" endline="17" begincolumn="19" endcolumn="35" priority="1" rule="PB.USC.UIF" ruleset="" package="examples.flowanalysis">The "else" condition always evaluates to "false" because of previous branches</violation>
+    <violation beginline="17" endline="17" begincolumn="19" endcolumn="35" priority="1" rule="PB.USC.UIF" ruleset="Useless Code" package="examples.flowanalysis">The "else" condition always evaluates to "false" because of previous branches</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
-    <violation beginline="18" endline="18" begincolumn="19" endcolumn="40" priority="1" rule="PB.USC.UIF" ruleset="" package="examples.flowanalysis">The "else" condition always evaluates to "false" because of previous branches</violation>
+    <violation beginline="18" endline="18" begincolumn="19" endcolumn="40" priority="1" rule="PB.USC.UIF" ruleset="Useless Code" package="examples.flowanalysis">The "else" condition always evaluates to "false" because of previous branches</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
-    <violation beginline="47" endline="47" begincolumn="10" endcolumn="18" priority="3" rule="OPT.SI" ruleset="" package="examples.flowanalysis">Member class could be declared "static": Consumer</violation>
+    <violation beginline="47" endline="47" begincolumn="10" endcolumn="18" priority="3" rule="OPT.SI" ruleset="Optimization" package="examples.flowanalysis">Member class could be declared "static": Consumer</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientCollectionRemoval.java">
-    <violation beginline="28" endline="28" begincolumn="15" endcolumn="19" priority="2" rule="PB.LOGIC.OAMC" ruleset="" package="examples.flowanalysis">'hasNext()' is called on the variable "iter" in the loop's condition, but 'next()' is never called on this variable in the loop's body</violation>
+    <violation beginline="28" endline="28" begincolumn="15" endcolumn="19" priority="2" rule="PB.LOGIC.OAMC" ruleset="Logical Errors" package="examples.flowanalysis">'hasNext()' is called on the variable "iter" in the loop's condition, but 'next()' is never called on this variable in the loop's body</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
-    <violation beginline="43" endline="43" begincolumn="15" endcolumn="19" priority="2" rule="PB.LOGIC.OAMC" ruleset="" package="examples.flowanalysis">'hasNext()' is called on the variable "iter" in the loop's condition, but 'next()' is never called on this variable in the loop's body</violation>
+    <violation beginline="43" endline="43" begincolumn="15" endcolumn="19" priority="2" rule="PB.LOGIC.OAMC" ruleset="Logical Errors" package="examples.flowanalysis">'hasNext()' is called on the variable "iter" in the loop's condition, but 'next()' is never called on this variable in the loop's body</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
-    <violation beginline="55" endline="55" begincolumn="15" endcolumn="19" priority="2" rule="PB.LOGIC.OAMC" ruleset="" package="examples.flowanalysis">'hasNext()' is called on the variable "iter" in the loop's condition, but 'next()' is never called on this variable in the loop's body</violation>
+    <violation beginline="55" endline="55" begincolumn="15" endcolumn="19" priority="2" rule="PB.LOGIC.OAMC" ruleset="Logical Errors" package="examples.flowanalysis">'hasNext()' is called on the variable "iter" in the loop's condition, but 'next()' is never called on this variable in the loop's body</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java">
-    <violation beginline="18" endline="18" begincolumn="19" endcolumn="24" priority="3" rule="UC.AURV" ruleset="" package="examples.flowanalysis">Variable 'value' is never used</violation>
+    <violation beginline="18" endline="18" begincolumn="19" endcolumn="24" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'value' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java">
-    <violation beginline="32" endline="32" begincolumn="19" endcolumn="22" priority="3" rule="UC.AURV" ruleset="" package="examples.flowanalysis">Variable 'key' is never used</violation>
+    <violation beginline="32" endline="32" begincolumn="19" endcolumn="22" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'key' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java">
-    <violation beginline="33" endline="33" begincolumn="19" endcolumn="24" priority="3" rule="UC.AURV" ruleset="" package="examples.flowanalysis">Variable 'value' is never used</violation>
+    <violation beginline="33" endline="33" begincolumn="19" endcolumn="24" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'value' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInitialization.java">
-    <violation beginline="55" endline="55" begincolumn="17" endcolumn="29" priority="3" rule="OPT.SI" ruleset="" package="examples.flowanalysis">Member class could be declared "static": ValueStorage</violation>
+    <violation beginline="55" endline="55" begincolumn="17" endcolumn="29" priority="3" rule="OPT.SI" ruleset="Optimization" package="examples.flowanalysis">Member class could be declared "static": ValueStorage</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
-    <violation beginline="116" endline="116" begincolumn="24" endcolumn="36" priority="3" rule="UC.AURCO" ruleset="" package="examples.nbank">'List' field '_accountsLog' is never read</violation>
+    <violation beginline="116" endline="116" begincolumn="24" endcolumn="36" priority="3" rule="UC.AURCO" ruleset="Unused Code" package="examples.nbank">'List' field '_accountsLog' is never read</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/nbank/CreditCard.java">
-    <violation beginline="104" endline="104" begincolumn="12" endcolumn="42" priority="2" rule="PB.CUB.UEIC" ruleset="" package="examples.nbank">"!=" is used when comparing 'String' Objects. 'equals()' should be used instead</violation>
+    <violation beginline="104" endline="104" begincolumn="12" endcolumn="42" priority="2" rule="PB.CUB.UEIC" ruleset="Confusing or Unintended Behavior" package="examples.nbank">"!=" is used when comparing 'String' Objects. 'equals()' should be used instead</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
-    <violation beginline="86" endline="86" begincolumn="40" endcolumn="41" priority="1" rule="JDBC.BRSA" ruleset="" package="examples.nbank">'0' is not a valid index value for this method call</violation>
+    <violation beginline="86" endline="86" begincolumn="40" endcolumn="41" priority="1" rule="JDBC.BRSA" ruleset="Java Database Connectivity" package="examples.nbank">'0' is not a valid index value for this method call</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/queue/Queue.java">
-    <violation beginline="46" endline="46" begincolumn="16" endcolumn="30" priority="2" rule="PB.CUB.UEIC" ruleset="" package="examples.queue">"!=" is used when comparing Objects. 'equals()' should be used instead</violation>
+    <violation beginline="46" endline="46" begincolumn="16" endcolumn="30" priority="2" rule="PB.CUB.UEIC" ruleset="Confusing or Unintended Behavior" package="examples.queue">"!=" is used when comparing Objects. 'equals()' should be used instead</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/queue/Queue.java">
-    <violation beginline="58" endline="58" begincolumn="18" endcolumn="27" priority="3" rule="OPT.SI" ruleset="" package="examples.queue">Member class could be declared "static": QueueItem</violation>
+    <violation beginline="58" endline="58" begincolumn="18" endcolumn="27" priority="3" rule="OPT.SI" ruleset="Optimization" package="examples.queue">Member class could be declared "static": QueueItem</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
-    <violation beginline="59" endline="59" begincolumn="23" endcolumn="34" priority="2" rule="PB.USC.FCBS" ruleset="" package="examples.security">The field '_connection' is used but is never assigned a non-"null" value</violation>
+    <violation beginline="59" endline="59" begincolumn="23" endcolumn="34" priority="2" rule="PB.USC.FCBS" ruleset="Useless Code" package="examples.security">The field '_connection' is used but is never assigned a non-"null" value</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/servlets/ExampleServlet.java">
-    <violation beginline="32" endline="32" begincolumn="19" endcolumn="21" priority="3" rule="UC.AURV" ruleset="" package="examples.servlets">Variable 'pr' is never used</violation>
+    <violation beginline="32" endline="32" begincolumn="19" endcolumn="21" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.servlets">Variable 'pr' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/servlets/ExampleServlet.java">
-    <violation beginline="34" endline="34" begincolumn="19" endcolumn="21" priority="3" rule="UC.AURV" ruleset="" package="examples.servlets">Variable 'pr' is never used</violation>
+    <violation beginline="34" endline="34" begincolumn="19" endcolumn="21" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.servlets">Variable 'pr' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/stackmachine/CommandLineStackMachine.java">
-    <violation beginline="79" endline="79" begincolumn="20" endcolumn="25" priority="3" rule="UC.AURV" ruleset="" package="examples.stackmachine">Variable 'value' is never used</violation>
+    <violation beginline="79" endline="79" begincolumn="20" endcolumn="25" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.stackmachine">Variable 'value' is never used</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java">
-    <violation beginline="13" endline="13" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.flowanalysis">Security context not disposed: GSSManager.getInstance().createContext(tokens)</violation>
+    <violation beginline="13" endline="13" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Security context not disposed: GSSManager.getInstance().createContext(tokens)</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java">
-    <violation beginline="29" endline="29" begincolumn="16" endcolumn="34" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis">"context" may possibly be null</violation>
+    <violation beginline="29" endline="29" begincolumn="16" endcolumn="34" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"context" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java">
-    <violation beginline="16" endline="16" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.flowanalysis">Image resource not closed: imgReader</violation>
+    <violation beginline="16" endline="16" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Image resource not closed: imgReader</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java">
-    <violation beginline="31" endline="31" begincolumn="12" endcolumn="32" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis">"imgReader" may possibly be null</violation>
+    <violation beginline="31" endline="31" begincolumn="12" endcolumn="32" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"imgReader" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseLogging.java">
-    <violation beginline="13" endline="13" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.flowanalysis">Logging handler not closed: handler</violation>
+    <violation beginline="13" endline="13" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Logging handler not closed: handler</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
-    <violation beginline="18" endline="18" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.flowanalysis">NIO channel not closed: &lt;FileInputStream referenced by channel&gt;.getChannel(), fInput.getChannel(), channel</violation>
+    <violation beginline="18" endline="18" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">NIO channel not closed: &lt;FileInputStream referenced by channel&gt;.getChannel(), fInput.getChannel(), channel</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
-    <violation beginline="35" endline="35" begincolumn="16" endcolumn="32" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis">"channel" may possibly be null</violation>
+    <violation beginline="35" endline="35" begincolumn="16" endcolumn="32" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"channel" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
-    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.flowanalysis">File not closed: raf</violation>
+    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">File not closed: raf</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
-    <violation beginline="32" endline="32" begincolumn="16" endcolumn="28" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis">"raf" may possibly be null</violation>
+    <violation beginline="32" endline="32" begincolumn="16" endcolumn="28" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"raf" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
-    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.flowanalysis">Socket not closed: sock</violation>
+    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Socket not closed: sock</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
-    <violation beginline="28" endline="28" begincolumn="16" endcolumn="29" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis">"sock" may possibly be null</violation>
+    <violation beginline="28" endline="28" begincolumn="16" endcolumn="29" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"sock" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java">
-    <violation beginline="52" endline="52" begincolumn="12" endcolumn="28" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis">"encoder" may possibly be null</violation>
+    <violation beginline="52" endline="52" begincolumn="12" endcolumn="28" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"encoder" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java">
-    <violation beginline="71" endline="71" begincolumn="12" endcolumn="28" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis">"decoder" may possibly be null</violation>
+    <violation beginline="71" endline="71" begincolumn="12" endcolumn="28" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"decoder" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
-    <violation beginline="17" endline="17" begincolumn="15" endcolumn="38" priority="2" rule="BD.PB.CC" ruleset="" package="examples.flowanalysis">Condition "code == 0" always evaluates to false</violation>
+    <violation beginline="17" endline="17" begincolumn="15" endcolumn="38" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "code == 0" always evaluates to false</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
-    <violation beginline="18" endline="18" begincolumn="15" endcolumn="43" priority="2" rule="BD.PB.CC" ruleset="" package="examples.flowanalysis">Condition "code == 0" always evaluates to false</violation>
+    <violation beginline="18" endline="18" begincolumn="15" endcolumn="43" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "code == 0" always evaluates to false</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
-    <violation beginline="22" endline="22" begincolumn="12" endcolumn="75" priority="1" rule="BD.PB.ZERO" ruleset="" package="examples.flowanalysis">Division by "discountedSum" which may possibly be zero</violation>
+    <violation beginline="22" endline="22" begincolumn="12" endcolumn="75" priority="1" rule="BD.PB.ZERO" ruleset="Possible Bugs" package="examples.flowanalysis">Division by "discountedSum" which may possibly be zero</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/FilesInjection.java">
-    <violation beginline="27" endline="27" begincolumn="12" endcolumn="25" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis">"fOut" may possibly be null</violation>
+    <violation beginline="27" endline="27" begincolumn="12" endcolumn="25" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"fOut" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/IncorrectIteratorUsage.java">
-    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified</violation>
+    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="Collections" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientCollectionRemoval.java">
-    <violation beginline="15" endline="15" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified</violation>
+    <violation beginline="15" endline="15" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="Collections" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
-    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified</violation>
+    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="Collections" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
-    <violation beginline="29" endline="29" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified</violation>
+    <violation beginline="29" endline="29" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="Collections" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
-    <violation beginline="11" endline="11" begincolumn="15" endcolumn="56" priority="2" rule="BD.PB.CC" ruleset="" package="examples.flowanalysis">Condition "result instanceof RuntimeException" always evaluates to false</violation>
+    <violation beginline="11" endline="11" begincolumn="15" endcolumn="56" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "result instanceof RuntimeException" always evaluates to false</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
-    <violation beginline="23" endline="23" begincolumn="19" endcolumn="39" priority="2" rule="BD.PB.CC" ruleset="" package="examples.flowanalysis">Condition "!volumetric" always evaluates to true</violation>
+    <violation beginline="23" endline="23" begincolumn="19" endcolumn="39" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "!volumetric" always evaluates to true</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
-    <violation beginline="25" endline="25" begincolumn="19" endcolumn="25" priority="2" rule="BD.PB.CC" ruleset="" package="examples.flowanalysis">Condition "!round" always evaluates to true</violation>
+    <violation beginline="25" endline="25" begincolumn="19" endcolumn="25" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "!round" always evaluates to true</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java">
-    <violation beginline="40" endline="40" begincolumn="12" endcolumn="60" priority="1" rule="BD.PB.NOTINITCTOR" ruleset="" package="examples.flowanalysis">"this.minLoginLength" is used prior to explicit initialization</violation>
+    <violation beginline="40" endline="40" begincolumn="12" endcolumn="60" priority="1" rule="BD.PB.NOTINITCTOR" ruleset="Possible Bugs" package="examples.flowanalysis">"this.minLoginLength" is used prior to explicit initialization</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java">
-    <violation beginline="40" endline="40" begincolumn="16" endcolumn="57" priority="1" rule="BD.PB.NOTEXPLINIT" ruleset="" package="examples.flowanalysis">"this.minLoginLength" is used prior to explicit initialization</violation>
+    <violation beginline="40" endline="40" begincolumn="16" endcolumn="57" priority="1" rule="BD.PB.NOTEXPLINIT" ruleset="Possible Bugs" package="examples.flowanalysis">"this.minLoginLength" is used prior to explicit initialization</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInitialization.java">
-    <violation beginline="22" endline="22" begincolumn="21" endcolumn="70" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.flowanalysis">Stream not closed: new FileInputStream("...")</violation>
+    <violation beginline="22" endline="22" begincolumn="21" endcolumn="70" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Stream not closed: new FileInputStream("...")</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/MyDictionary.java">
-    <violation beginline="18" endline="18" begincolumn="8" endcolumn="32" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis.np">"strKey" may possibly be null</violation>
+    <violation beginline="18" endline="18" begincolumn="8" endcolumn="32" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis.np">"strKey" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/NullPointer.java">
-    <violation beginline="22" endline="22" begincolumn="15" endcolumn="34" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis.np">"sFirstLine" may possibly be null</violation>
+    <violation beginline="22" endline="22" begincolumn="15" endcolumn="34" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis.np">"sFirstLine" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/NullPointer.java">
-    <violation beginline="27" endline="27" begincolumn="12" endcolumn="27" priority="1" rule="BD.EXCEPT.NP" ruleset="" package="examples.flowanalysis.np">"reader" may possibly be null</violation>
+    <violation beginline="27" endline="27" begincolumn="12" endcolumn="27" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis.np">"reader" may possibly be null</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/mock/ConstructorExample.java">
-    <violation beginline="14" endline="14" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.mock">File not closed: file</violation>
+    <violation beginline="14" endline="14" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.mock">File not closed: file</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
-    <violation beginline="36" endline="36" begincolumn="19" endcolumn="48" priority="2" rule="BD.PB.CC" ruleset="" package="examples.nbank">Condition "balance &gt;= 5000" always evaluates to true</violation>
+    <violation beginline="36" endline="36" begincolumn="19" endcolumn="48" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.nbank">Condition "balance &gt;= 5000" always evaluates to true</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
-    <violation beginline="73" endline="73" begincolumn="19" endcolumn="48" priority="2" rule="BD.PB.CC" ruleset="" package="examples.nbank">Condition "balance &gt;= 5000" always evaluates to true</violation>
+    <violation beginline="73" endline="73" begincolumn="19" endcolumn="48" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.nbank">Condition "balance &gt;= 5000" always evaluates to true</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
-    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.nbank">JDBC statement not closed: statement</violation>
+    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.nbank">JDBC statement not closed: statement</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
-    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.nbank">JDBC resultset not closed: statement.resultSet(), resultSet</violation>
+    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.nbank">JDBC resultset not closed: statement.resultSet(), resultSet</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
-    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.nbank">JDBC Connection not closed: connection</violation>
+    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.nbank">JDBC Connection not closed: connection</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
-    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.security">JDBC resultset not closed: stmt.resultSet(), rs</violation>
+    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.security">JDBC resultset not closed: stmt.resultSet(), rs</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
-    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.security">JDBC statement not closed: stmt</violation>
+    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.security">JDBC statement not closed: stmt</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
-    <violation beginline="123" endline="123" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="" package="examples.security">JDBC statement not closed: stmt</violation>
+    <violation beginline="123" endline="123" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.security">JDBC statement not closed: stmt</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/servlets/ExampleServlet.java">
-    <violation beginline="33" endline="33" begincolumn="15" endcolumn="27" priority="2" rule="BD.PB.CC" ruleset="" package="examples.servlets">Condition "n &gt; 0" always evaluates to true</violation>
+    <violation beginline="33" endline="33" begincolumn="15" endcolumn="27" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.servlets">Condition "n &gt; 0" always evaluates to true</violation>
   </file>
-  <error filename="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" msg="bbbbbbbbbbbbbbbbbb"/>
-  <configerror rule="UC.AURV" msg="dddddddddddddddddddd"/>
   <file name="/com.parasoft:demo/src/main/java/examples/metrics/MetricsExample.java">
-    <violation beginline="13" endline="14" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="">Value 8 is out of acceptable range: 'lower than 7'</violation>
+    <violation beginline="13" endline="14" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
   </file>
 </pmd>
