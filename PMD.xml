@@ -45,9 +45,6 @@
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java">
     <violation beginline="32" endline="32" begincolumn="19" endcolumn="22" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'key' is never used</violation>
   </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java">
-    <violation beginline="33" endline="33" begincolumn="19" endcolumn="24" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'value' is never used</violation>
-  </file>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInitialization.java">
     <violation beginline="55" endline="55" begincolumn="17" endcolumn="29" priority="3" rule="OPT.SI" ruleset="Optimization" package="examples.flowanalysis">Member class could be declared "static": ValueStorage</violation>
   </file>
