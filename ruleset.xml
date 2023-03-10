@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset>
+  <description></description>
+  <exclude-pattern></exclude-pattern>
+  <include-pattern></include-pattern>
+  <rule>
+      <description>aaaaaaaaaaaaaaaaaaa</description>
+      <priority>bbbbbbbbbb</priority>
+      <properties>
+          <property name="propertyName">
+               <value>
+                  cccccccccc
+               </value>
+          </property>
+      </properties>
+      <exclude name="excludeName">dddddddddd</exclude>
+      <example>eeeeeeeee</example>
+  </rule>
+</ruleset>
