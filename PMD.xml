@@ -376,4 +376,5 @@
     <suppressedviolation filename="/edgtk_nightly/src/wrappers/expressions/Operation.cc" suppressiontype="Metric" msg="Value 122 is out of acceptable range: 'lower than 30'"/>
     <suppressedviolation filename="/xharness_nightly/coverage/src/CoverageMapFile.cc" suppressiontype="Metric" msg="Value 31 is out of acceptable range: 'lower than 30'"/>
     <suppressedviolation filename="/libdetector_nightly/src/RealCmdLnExtractor.cc" suppressiontype="Metric" msg="Value 36 is out of acceptable range: 'lower than 30'"/>
+    <configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
 </pmd>
