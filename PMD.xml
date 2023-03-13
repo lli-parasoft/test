@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd>
   <file name="/com.parasoft:demo/src/main/java/examples/eval/Simple.java">
-    <violation beginline="24" endline="24" begincolumn="12" endcolumn="18" priority="2" rule="PB.TYPO.TLS" ruleset="Typographical Errors" package="examples.eval">Text label 'case10' may be a typo for 'case 10'</violation>
-  </file>
-  <file name="/com.parasoft:demo/src/main/java/examples/eval/Simple.java">
     <violation beginline="24" endline="24" begincolumn="12" endcolumn="18" priority="3" rule="UC.AUL" ruleset="Unused Code" package="examples.eval">Avoid unused label: case10</violation>
   </file>
   <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
