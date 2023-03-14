@@ -380,7 +380,7 @@
 <!--        <description>This is a description</description>-->
 <!--        <exclude-pattern>This is a exclude-pattern</exclude-pattern>-->
 <!--        <include-pattern>This is a include-pattern</include-pattern>-->
-        <rule language="JAVA" minimumLanguageVersion="1.0" maximumLanguageVersion="2.0" name="123456789" since="since" ref="category/java/codestyle.xml/EmptyControlStatement" message="A message" externalInfoUrl="https://www.parasoft.com/" class="class" dfa="true" typeResolution="true" deprecated="true">
+        <rule language="JAVA" minimumLanguageVersion="1.0" maximumLanguageVersion="2.0" name="123456789" since="since" ref="/optdetector_nightly/utils/optdetector/optdetector.cc" message="A message" externalInfoUrl="https://www.parasoft.com/" class="class" dfa="true" typeResolution="true" deprecated="true">
             <description>This is a description aaa</description>
             <priority>This is a priority</priority>
             <properties>
