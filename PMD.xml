@@ -205,7 +205,7 @@
         <description>This is a description</description>
         <exclude-pattern>This is a exclude-pattern</exclude-pattern>
         <include-pattern>This is a include-pattern</include-pattern>
-        <rule language="JAVA" minimumLanguageVersion="1.0" maximumLanguageVersion="2.0" name="METRIC.NBD" since="since" ref="reports/jtestStatic.xml" message="A message" externalInfoUrl="https://www.parasoft.com/" class="class" dfa="true" typeResolution="true" deprecated="true">
+        <rule language="JAVA" minimumLanguageVersion="1.0" maximumLanguageVersion="2.0" name="METRIC.NBD" since="since" ref="/com.parasoft:demo/src/main/java/examples/metrics/MetricsExample.java" message="A message" externalInfoUrl="https://www.parasoft.com/" class="class" dfa="true" typeResolution="true" deprecated="true">
             <description>This is a description aaa</description>
             <priority>This is a priority</priority>
             <properties>
