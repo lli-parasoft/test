@@ -1,13 +1,21 @@
-<?xml version="1.0"?>
-<ruleset name="6460"
-    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
-  <description>
-This ruleset contains links to rules that are new in PMD v6.46.0
-  </description>
-
-  <rule ref="category/java/codestyle.xml/EmptyControlStatement"/>
-  <rule ref="category/java/codestyle.xml/UnnecessarySemicolon"/>
-
-</ruleset>
+    <ruleset name="Ruleset Test"
+             xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+        <description>This is a description</description>
+        <exclude-pattern>This is a exclude-pattern</exclude-pattern>
+        <include-pattern>This is a include-pattern</include-pattern>
+        <rule language="JAVA" minimumLanguageVersion="1.0" maximumLanguageVersion="2.0" name="123456789" since="since" ref="category/java/codestyle.xml/EmptyControlStatement" message="A message" externalInfoUrl="https://www.parasoft.com/" class="class" dfa="true" typeResolution="true" deprecated="true">
+            <description>This is a description aaa</description>
+            <priority>This is a priority</priority>
+            <properties>
+                <property name="propertyName" value="123" description="This is a property description" type="XML" delimiter="***" min="0" max="100">
+                    <value>
+                        This is a priority aaa
+                    </value>
+                </property>
+            </properties>
+            <exclude name="excludeName">This is a exclude</exclude>
+            <example>This is a example</example>
+        </rule>
+    </ruleset>
