@@ -1,6 +1,6 @@
 <ruleset name="Ruleset Test"
 		 xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<description>This is a description</description>
 	<exclude-pattern>This is a exclude-pattern</exclude-pattern>
 	<include-pattern>This is a include-pattern</include-pattern>
